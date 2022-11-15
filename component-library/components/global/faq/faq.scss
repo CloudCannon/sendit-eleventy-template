@@ -1,0 +1,23 @@
+/********** 
+  18. FAQ Section Styles
+**********/
+
+.faq-two {
+   padding-bottom: $base-padding * 9.4;
+   background: $color-gray-dark;
+   @include media-breakpoint-down-xl {
+      padding-bottom: $base-padding * 5;
+   }
+   @include media-breakpoint-down-md {
+      padding-bottom: $base-padding * 3;
+   }
+   .section-header {
+      padding-bottom: $base-padding * 4.4;
+      @include media-breakpoint-down-sm {
+         padding-bottom: $base-padding * 3;
+      }
+   }
+   .shows {
+      border: 1px solid $color-anchor;
+   }
+}

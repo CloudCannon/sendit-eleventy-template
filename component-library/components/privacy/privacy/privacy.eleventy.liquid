@@ -1,0 +1,62 @@
+<section class="privacy">
+  <div class="container">
+    <div class="row">
+      <div class="privacy-wrapper">
+        <div class="col-lg-7 mx-auto">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example2"
+            data-bs-offset="0"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            {% for item in privacy %}
+              {% if item.key == "descriptive" %}
+              <div class="privacy-items" id="item{{forloop.index}}">
+                <div class="card">
+                  <h3 class="sub-title">{{item.heading}}</h3>
+                  <div class="card-body">
+                    <div class="card-text">{{ item.description | markdownify }}</div>
+                  </div>
+                </div>
+              </div>
+              {% else %}
+              <div class="privacy-items" id="item{{forloop.index}}">
+                <div class="card">
+                  <h3 class="sub-title">{{item.heading}}</h3>
+                  <div class="card-body">
+                    <div class="card-text">
+                    {{ item.description | markdownify }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <nav id="scrol-nav" class="navbar navbar-light privacy-nav">
+            <ul class="nav nav-pills">
+              {% for item in privacy %}
+                {% if forloop.index == 1 %}
+                <li class="nav-item">
+                  <a class="nav-link active" href="#item{{forloop.index}}"
+                    >{{item.heading}}</a
+                  >
+                </li>
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="#item{{forloop.index}}">
+                    {{item.heading}}</a
+                  >
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

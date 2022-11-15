@@ -1,0 +1,37 @@
+<section
+   class="counter-up {% if alternate_style %} counter-up-two pb-xxl-14 pb-lg-13 {% endif %}"
+   id="counter-up"
+>
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12">
+            <div class="section-header">
+               <h2>
+                  {{ title }} <span>{{ title_suffix }}</span>
+               </h2>
+               {{ description | markdownify}}
+            </div>
+         </div>
+         <div class="col-12">
+            <div class="counter-up-wrapper d-grid">
+               {% for item in numbers %}
+               <div class="counter-up-content">
+                  <div class="counter-up-content-item">
+                     <div class="counter-percent">
+                        {% if item.prefix %}
+                        <span class="percent">{{ item.prefix }}</span>
+                        {% endif %}
+                        <span class="counter">{{ item.number }}</span>
+                        {% if item.suffix %}
+                        <span class="percent">{{ item.suffix }}</span>
+                        {% endif %}
+                     </div>
+                     <p>{{ item.text }}</p>
+                  </div>
+               </div>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

@@ -1,0 +1,23 @@
+<section class="feature-hero">
+   <div class="container">
+      <div class="row align-items-center">
+         <div class="col-lg-6">
+            <div class="feature-hero-content">
+               <h1 class="">{{title}}</h1>
+               {{description | markdownify}}
+               <div class="d-block mb-6">
+                  <a href="{{btn.link}}" class="btn btn-primary btn-lg"> {{btn.text}} </a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="feature-hero-banner">
+               <img src="{{image_path}}" alt="banner-image" loading="lazy" />
+               <div class="shape">
+                  <img src="/images/feature/effect-4.png" alt="shape" loading="lazy" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

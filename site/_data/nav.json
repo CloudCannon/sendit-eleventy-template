@@ -1,0 +1,12 @@
+{
+  "logo": "/images/logo.svg",
+  "items": [
+    { "link": "/", "text": "Home" },
+    { "link": "/feature", "text": "Feature" },
+    { "link": "/pricing", "text": "Pricing" },
+    { "link": "/about", "text": "About" },
+    { "link": "/blogs", "text": "Blogs" },
+    { "link": "/contact", "text": "Contact" }
+  ],
+  "btn": { "link": "/signup", "text": "Get Started" }
+}

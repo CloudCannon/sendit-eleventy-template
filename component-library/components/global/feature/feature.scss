@@ -1,0 +1,102 @@
+/********** 
+  9. Feature Page nd Section Styles
+**********/
+.feature,
+.feature-two {
+  position: relative;
+  overflow: hidden;
+  &-item-banner {
+    position: relative;
+    z-index: 1;
+    .card-image {
+      z-index: 1;
+      text-align: center;
+      img {
+        max-width: 100%;
+        @include media-breakpoint-down-lg {
+          width: 100%;
+        }
+      }
+    }
+    .effect-one,
+    .effect-two,
+    .effect-three {
+      position: absolute;
+      top: -8%;
+      z-index: -1;
+
+      img {
+        @include media-breakpoint-down-xxl {
+          max-width: 100%;
+        }
+      }
+    }
+    .effect-one {
+      left: -11%;
+      @include media-breakpoint-down-lg {
+        left: -4%;
+      }
+    }
+    .effect-two {
+      top: -21%;
+      right: -17%;
+      @include media-breakpoint-down-xxl {
+        right: -9%;
+      }
+      @include media-breakpoint-down-sm {
+        top: -8%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .effect-three {
+      top: -13%;
+      left: -7%;
+    }
+  }
+  &-item-content {
+    h2 {
+      font-size: $base-font-size * 2.8;
+      padding-right: $base-padding * 10;
+      margin-bottom: $base-margin * 2.5;
+      @include media-breakpoint-down-xl {
+        font-size: $base-font-size * 2;
+        padding-right: $base-padding * 0;
+        margin-bottom: $base-margin * 1.5;
+      }
+      @include media-breakpoint-down-sm {
+        font-size: $base-font-size * 1.9;
+        margin-bottom: $base-margin * 1.25;
+      }
+    }
+    p {
+      color: $color-text-light;
+      margin-bottom: $base-margin * 0.7;
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: -0.8px;
+      @include media-breakpoint-down-sm {
+        font-size: $base-font-size * 1.1;
+        line-height: 29.7px;
+      }
+    }
+    ul {
+      padding-left: $base-padding;
+
+      li {
+        color: $color-text-light;
+        font-size: 20px;
+        line-height: 33px;
+        list-style: disc;
+        margin-bottom: $base-margin * 1.3;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        @include media-breakpoint-down-sm {
+          font-size: $base-font-size * 1.1;
+          margin-bottom: $base-margin * 1;
+        }
+      }
+    }
+  }
+}

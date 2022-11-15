@@ -1,0 +1,48 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Pricing Table
+  description: Pricing table section
+  icon: "table_rows"
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  pricing_tier:
+    - tier: free
+      description: For starters Includes unlimited members
+      price: 0
+      has_discount: false
+      discount_price: 0
+      is_active: false
+      feature:
+        - item: 1 Site Activation
+          is_active: true
+        - item: 1 Year Premium Support
+          is_active: true
+        - item: Regular Update for 1 Year
+          is_active: true
+        - item: 90+ Widgets & Extensions
+          is_active: true
+        - item: 23+ Templates
+          is_active: true
+        - item: Over 800 Section Blocks
+          is_active: false
+        - item: Support
+          is_active: false
+        - item: 3 filters
+          is_active: false
+        - item: Unlimited activity history
+          is_active: false
+      btn:
+        link: /login
+        text: Try This Free
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  description:
+    type: markdown

@@ -1,0 +1,26 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Feature Hero
+  description: Feature Hero section
+  icon: "contactless"
+  tags: ["hero"]
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: Email campaigns Features
+  description: The stats are in our favour. SaaSFlow doesn't just help you with
+    your email marketing, we get you customer relationships that last.
+  btn:
+    link: /sign-up
+    text: Try This Free
+  image_path: /images/feature/feature-hero.png
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  description:
+    type: markdown
