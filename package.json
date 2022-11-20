@@ -1,7 +1,7 @@
 {
-  "name": "SendIt_Eleventy",
+  "name": "Sendit_Eleventy",
   "version": "1.0.1",
-  "description": "SenDit is a email marketing tool which ensure the business growth",
+  "description": "Sendit is a email marketing tool which ensure the business growth",
   "scripts": {
     "bookshop:watch": "bookshop-browser",
     "bookshop-sass:build": "bookshop-sass -b component-library -o site/css/theme.css",
