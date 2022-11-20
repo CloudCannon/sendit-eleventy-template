@@ -1,5 +1,5 @@
 {
-  "name": "Sendit_Eleventy",
+  "name": "sendit_eleventy",
   "version": "1.0.1",
   "description": "Sendit is a email marketing tool which ensure the business growth",
   "scripts": {
@@ -10,7 +10,7 @@
     "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
     "start": "npm-run-all bookshop-sass:build --parallel bookshop-sass:watch bookshop:watch eleventy:watch"
   },
-  "author": "StaticMania",
+  "author": "CloudCannon",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",

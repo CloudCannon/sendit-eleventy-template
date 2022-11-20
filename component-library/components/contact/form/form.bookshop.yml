@@ -17,7 +17,7 @@ blueprint:
     cell: "(546) 232 - 9872"
   email:
     heading: "Email"
-    email: "info@staticmania.com"
+    email: "hello@example.com"
   form:
     heading: "Say Hello"
     fullname:

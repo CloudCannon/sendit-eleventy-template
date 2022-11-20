@@ -15,7 +15,7 @@ blueprint:
   slider:
     - image_path: "/images/testimonial/logo-2.jpg"
       author: "Sherlock Homes"
-      designation: "Head of Dev. at StaticMania"
+      designation: "Head of Dev. at Company"
       message: "Eget eu massa et consectetur. Mauris donec. Leo a, id sed duis proin sodales. Turpis viverra diam porttitor mattis morbi ac amet."
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

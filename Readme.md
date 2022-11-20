@@ -1,48 +1,35 @@
 # Sendit
 
-Sendit HTML Theme Development Structure
-
-Sendit is a simple, minimal and responsive Portfolio Hugo Theme. Sendit is well organized, well-formatted and named accordingly so it’s easy to change any and all of the design. Sendit is built with Bootstrap 4. You can customize it very easy to fit your needs.
-
-## Table of Contents
-
--  [Live Demo](#Live-Demo)
--  [Installation](#Installation)
--  [Main Features](#Features)
--  [Support](#Support)
--  [Licensing](#Licensing)
--  [Hire](#Hire)
-
-## Live-Demo
-
-Checkout the live demo [here](https://legit-needle.cloudvent.net/)
-
-## Installation
-
-1. Add the repository into your Hugo Project repository by `https://github.com/StaticMania/Sendit-11ty-cloudcannon`
-2. After downloading the project run **yarn** to install the modules.
-3. After successfully installed all require modules, run **yarn start** to run the project. this will create a \_start folder, where all the developed file will remain.
-4. To built the final project, run **yarn eleventy:build** command.
-5. Build and run project by `yarn start` and see the result at `http://localhost:8080`
-6. For more details, read the full documentation [here](https://documentation.staticmania.com/docs/Sendit/).
+Sendit is a polished, marketing website template for Eleventy. Browse through a [live demo](https://potent-ship.cloudvent.net/).
 
 ## Features
 
--  Responsive Ready.
--  Powered by Bootstrap 4.
--  Dedicated portfolio and blog page.
--  Well formatted code.
--  Easy Customization.
--  Crafted for Design Agency/ Portfolio
+- Pre-built pages
+- Pre-styled components
+- Blog with pagination and category pages
+- Configurable navigation and footer
+- Multiple hero options
+- Optimised for editing in CloudCannon
 
-## Support
+## Setup
 
-Have some question or facing any technical trouble feel free to [Contact Us](https://staticmania.com/contact/)
+Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or locally).
 
-## Licensing
+## Prerequisites
 
-This Repository is licensed under the [MIT](#) License
+## Quickstart
 
-## Hire
+2. Run `yarn` to install the modules.
+3. Run `yarn start` to run the project. this will create a \_start folder, where all the developed file will remain.
+4. To built the final project, run `yarn eleventy:build` command.
 
-Need help to build Eleventy websites with your custom requirements. Feel free to [contact](https://staticmania.com/contact/) with us. We provide custom development service for Eleventy.
+By default the site will be at `http://localhost:8080`
+
+## Editing
+
+Sendit is set up for adding, updating and removing pages, components, posts, navigation and footer elements in [CloudCannon](https://app.cloudcannon.com/).
+
+### Nav/footer details
+
+* Reused around the site to save multiple editing locations.
+* Set in the *Data* section with respective names

@@ -1,20 +1,20 @@
 {
   "logo": "/images/footer-logo.svg",
   "logo_url": "/",
-  "copyright": "StaticMania, All rights reserved!",
+  "copyright": "MyCompany, All rights reserved!",
   "social": [
     {
-      "link": "https://www.facebook.com/staticmania",
+      "link": "https://www.facebook.com/",
       "icon": "ph-facebook-logo"
     },
     {
-      "link": "https://www.instagram.com/staticmania_",
+      "link": "https://www.instagram.com/",
       "icon": "ph-instagram-logo"
     },
-    { "link": "https://twitter.com/heystaticmania", "icon": "ph-twitter-logo" },
-    { "link": "https://www.github.com/staticmania", "icon": "ph-github-logo" },
+    { "link": "https://twitter.com/", "icon": "ph-twitter-logo" },
+    { "link": "https://www.github.com/", "icon": "ph-github-logo" },
     {
-      "link": "https://www.youtube.com/channel/UCAaNCn1kzI1fXD4-fPD157Q",
+      "link": "https://www.youtube.com/",
       "icon": "ph-youtube-logo"
     }
   ],
