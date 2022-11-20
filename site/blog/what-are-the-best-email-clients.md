@@ -1,15 +1,15 @@
 ---
 date: 2022-03-07
-title: 5 things to improve you email templates
+title: What are the best email clients?
 layout: layouts/blog-single.liquid
 tags:
   - marketing
-  - blogs
-author: Aaron Britt
+  - blog
+author: Wendy Parkes
 thumbImg:
-  image_path: /images/blog/blog-thumb-6.jpg
+  image_path: /images/blog/blog-thumb-4.jpg
 featuredImg:
-  image_path: /images/blog/featured-image-2.jpg
+  image_path: /images/blog/featured-image-4.jpg
 ---
 
 When you send an email campaign, you expect it to reach your readers, right? But what if the emails go straight to your subscribers' spam folders instead of their inboxes? To make sure your emails reach their recipients successfully, follow these email delivery tips.

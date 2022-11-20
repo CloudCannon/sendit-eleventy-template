@@ -1,13 +1,13 @@
 ---
 date: 2022-03-07
-title: How to host better email marketing campaigns?
+title: 5 things to improve you email templates
 layout: layouts/blog-single.liquid
 tags:
   - marketing
-  - blogs
-author: Arther Conal
+  - blog
+author: Aaron Britt
 thumbImg:
-  image_path: /images/blog/blog-thumb-2.jpg
+  image_path: /images/blog/blog-thumb-6.jpg
 featuredImg:
   image_path: /images/blog/featured-image-2.jpg
 ---

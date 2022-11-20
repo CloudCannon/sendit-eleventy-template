@@ -31,7 +31,7 @@
     {
       "title": "other Page",
       "links": [
-        { "link": "/blogs", "text": "Blogs" },
+        { "link": "/blog", "text": "Blog" },
         { "link": "/404", "text": "404" }
       ]
     },
