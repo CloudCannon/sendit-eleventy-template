@@ -55,6 +55,12 @@
          {% endif %}
       {% endif %}
 
+      {% comment %} Add robots no index {% endcomment %}
+      {% if seo.noindex or eleventyExcludeFromCollections %}
+         <meta name="robots" content="noindex">
+         <meta name="googlebot" content="noindex">
+      {% endif %}
+
       {%- comment -%} Canonical URL for SEO {%- endcomment -%}
       {% if seo.canonical_url %}
          <link rel="canonical" href="{{ seo.canonical_url }}" />
