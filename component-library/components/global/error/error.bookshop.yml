@@ -10,7 +10,8 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   description: "Something is wrong here!"
-  image_path: "/images/404/error.png"
+  image: "/images/404/error.png"
+  image_alt: Error
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

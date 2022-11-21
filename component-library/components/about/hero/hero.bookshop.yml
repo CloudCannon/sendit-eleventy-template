@@ -12,11 +12,14 @@ blueprint:
   title: One mission to make the better marketing
   description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing.
   hero_images:
-    - image_path: /images/about/aboutfeature-two.png
+    - image: /images/about/aboutfeature-two.png
+      image_alt: People working
       placer: front_buttom
-    - image_path: /images/about/aboutfeature-three.png
+    - image: /images/about/aboutfeature-three.png
+      image_alt: Group of people looking at a computer
       placer: back_top_right
-    - image_path: /images/about/aboutfeature-four.png
+    - image: /images/about/aboutfeature-four.png
+      image_alt: Staff group photo
       placer: back_top_left
   btn:
     text: "See more"

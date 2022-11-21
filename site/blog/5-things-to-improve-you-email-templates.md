@@ -7,9 +7,11 @@ tags:
   - blog
 author: Aaron Britt
 thumbImg:
-  image_path: /images/blog/blog-thumb-6.jpg
+  image: /images/blog/blog-thumb-6.jpg
+  image_alt: People working on laptops and looking at charts
 featuredImg:
-  image_path: /images/blog/featured-image-2.jpg
+  image: /images/blog/featured-image-2.jpg
+  image_alt: Children looking at a laptop
 seo:
   page_description: 
   canonical_url: 

@@ -7,9 +7,11 @@ tags:
   - blog
 author: Wendy Parkes
 thumbImg:
-  image_path: /images/blog/blog-thumb-3.jpg
+  image: /images/blog/blog-thumb-3.jpg
+  image_alt: Staff meeting
 featuredImg:
-  image_path: /images/blog/featured-image-5.jpg
+  image: /images/blog/featured-image-5.jpg
+  image_alt: Laptop, phone and coffee
 seo:
   page_description: 
   canonical_url: 

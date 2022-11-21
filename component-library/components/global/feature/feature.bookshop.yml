@@ -9,7 +9,8 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  image_path: /images/feature/feature-card-one.png
+  image: /images/feature/feature-card-one.png
+  image_alt: Message inbox
   title: Text Message in One Minute
   description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last.
   btn:

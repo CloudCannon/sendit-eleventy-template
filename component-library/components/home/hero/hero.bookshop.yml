@@ -11,7 +11,8 @@ spec:
 blueprint:
   title: Email Marketing is Future for Grow Your Business Revenues
   description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last.
-  image_path: /images/hero/hero-image-2.png
+  image: /images/hero/hero-image-2.png
+  image_alt: Dashboard with reports
   link:
     text: Try This Free
     url: /signup

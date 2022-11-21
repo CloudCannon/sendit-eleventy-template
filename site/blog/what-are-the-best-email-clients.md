@@ -7,9 +7,11 @@ tags:
   - blog
 author: Wendy Parkes
 thumbImg:
-  image_path: /images/blog/blog-thumb-4.jpg
+  image: /images/blog/blog-thumb-4.jpg
+  image_alt: Group of people working
 featuredImg:
-  image_path: /images/blog/featured-image-4.jpg
+  image: /images/blog/featured-image-4.jpg
+  image_alt: Person drinking coffee
 seo:
   page_description: 
   canonical_url: 

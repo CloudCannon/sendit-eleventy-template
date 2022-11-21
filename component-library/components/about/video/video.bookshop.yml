@@ -21,7 +21,8 @@ blueprint:
     link: https://www.linkedin.com/
     text: Follow on Linkedin
   video:
-    image_path: /images/works/banner.jpg
+    image: /images/works/banner.jpg
+    image_alt: Placeholder image for the video
     link: https://vimeo.com/45830194
 
 # Overrides any fields in the blueprint when viewing this component in the component browser

@@ -7,9 +7,11 @@ tags:
   - blog
 author: Miyah Kelley
 thumbImg:
-  image_path: /images/blog/blog-thumb-5.jpg
+  image: /images/blog/blog-thumb-5.jpg
+  image_alt: Group of people discussing something shwon on a laptop
 featuredImg:
-  image_path: /images/blog/featured-image-3.jpg
+  image: /images/blog/featured-image-3.jpg
+  image_alt: Person drinking coffee
 seo:
   page_description: 
   canonical_url: 

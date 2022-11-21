@@ -7,9 +7,11 @@ tags:
   - blog
 author: Arther Conal
 thumbImg:
-  image_path: /images/blog/blog-thumb-2.jpg
+  image: /images/blog/blog-thumb-2.jpg
+  image_alt: People conversing
 featuredImg:
-  image_path: /images/blog/featured-image-2.jpg
+  image: /images/blog/featured-image-2.jpg
+  image_alt: Children looking at a computer
 seo:
   page_description: 
   canonical_url: 

@@ -7,9 +7,11 @@ tags:
   - blog
 author: Gerard Hopper
 thumbImg:
-  image_path: /images/blog/blog-thumb-1.jpg
+  image: /images/blog/blog-thumb-1.jpg
+  image_alt: Arial shot of people working
 featuredImg:
-  image_path: /images/blog/featured-image-1.jpg
+  image: /images/blog/featured-image-1.jpg
+  image_alt: Child using a computer
 seo:
   page_description: 
   canonical_url: 
