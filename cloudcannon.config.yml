@@ -1,3 +1,7 @@
+collections_config:
+  blog:
+    path: 'site/blog'
+
 _inputs:
   page_description:
     comment: Defaults to the description set in the Site SEO data file
