@@ -32,8 +32,8 @@
       {% else %}
          <meta name="og:title" content="{{ title }}" />
          <meta name="twitter:title" content="{{ title }}" />
-         {% if seo.og_type %}
-            <meta property="og:type" content="{{ seo.og_type }}" />
+         {% if seo.open_graph_type %}
+            <meta property="og:type" content="{{ seo.open_graph_type }}" />
          {% else %}
             <meta property="og:type" content="website" />
          {% endif %}
@@ -56,7 +56,7 @@
       {% endif %}
 
       {% comment %} Add robots no index {% endcomment %}
-      {% if seo.noindex %}
+      {% if seo.no_index %}
          <meta name="robots" content="noindex">
          <meta name="googlebot" content="noindex">
       {% endif %}
