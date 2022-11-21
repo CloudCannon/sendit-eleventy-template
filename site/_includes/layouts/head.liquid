@@ -56,16 +56,16 @@
       {% endif %}
 
       {% comment %} Add robots no index {% endcomment %}
-      {% if seo.noindex or eleventyExcludeFromCollections %}
+      {% if seo.noindex %}
          <meta name="robots" content="noindex">
          <meta name="googlebot" content="noindex">
       {% endif %}
 
       {%- comment -%} Canonical URL for SEO {%- endcomment -%}
       {% if seo.canonical_url %}
-         <link rel="canonical" href="{{ seo.canonical_url }}" />
+         <link rel="canonical" href="{{ siteSEO.BaseURL }}{{ seo.canonical_url | url }}" />
       {% else %}
-         <link rel="canonical" href="{{ page.url }}" />
+         <link rel="canonical" href="{{ siteSEO.BaseURL }}{{ page.url | url }}" />
       {% endif %}
 
       {%- comment -%} Styles {%- endcomment -%}
