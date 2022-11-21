@@ -2,13 +2,73 @@
 <html lang="en">
    <head>
       <meta charset="utf-8" />
-      <title>{{title}} | Sendit</title>
+      <title>{{ title }} | {{ siteSEO.site_title }}</title>
+
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="Sendit is a email marketing tool which ensure the business growth">
+
+      {%- comment -%} Page description for SEO {%- endcomment -%}
+      {% if seo.description %}
+         <meta name="description" content="{{ seo.description }}">
+         <meta property="og:description" content="{{ seo.description }}" />
+      {% else %}
+         <meta name="description" content="{{ siteSEO.description }}">
+         <meta property="og:description" content="{{ siteSEO.description }}" />
+      {% endif %}
+
+      {% comment %} meta tags for open graph and twitter {% endcomment %}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="{{ siteSEO.twitter_site }}" />
+      {% if page.url == "/" %}
+         <meta name="og:title" content="{{siteSEO.site_title }}" />
+         <meta property="og:type" content="website" />
+         <meta name="og:image" content="{{ siteSEO.image }}" />
+         <meta name="twitter:creator" content="{{ siteSEO.twitter_site }}" />
+         <meta name="twitter:title" content="{{ siteSEO.site_title }}" />
+         {% if siteSEO.twitter_image %}
+            <meta name="twitter:image" content="{{ siteSEO.twitter_image }}" />
+         {% else %}
+            <meta name="twitter:image" content="{{ siteSEO.image }}" />
+         {% endif %}
+      {% else %}
+         <meta name="og:title" content="{{ title }}" />
+         <meta name="twitter:title" content="{{ title }}" />
+         {% if seo.og_type %}
+            <meta property="og:type" content="{{ seo.og_type }}" />
+         {% else %}
+            <meta property="og:type" content="website" />
+         {% endif %}
+         {% if seo.featured_image %}
+            <meta name="og:image" content="{{ seo.featured_image }}" />
+            <meta name="twitter:image" content="{{ seo.featured_image }}" />
+         {% else %}
+            <meta name="og:image" content="{{ siteSEO.image }}" />
+            {% if siteSEO.twitter_image %}
+               <meta name="twitter:image" content="{{ siteSEO.twitter_image }}" />
+            {% else %}
+               <meta name="twitter:image" content="{{siteSEO.image }}" />
+            {% endif %}
+         {% endif %}
+         {% if seo.author_twitter_handle %}  
+            <meta name="twitter:creator" content="{{ seo.author_twitter_handle }}" />
+         {% else %}
+            <meta name="twitter:creator" content="{{ siteSEO.twitter_site }}" />
+         {% endif %}
+      {% endif %}
+
+      {%- comment -%} Canonical URL for SEO {%- endcomment -%}
+      {% if seo.canonical_url %}
+         <link rel="canonical" href="{{ seo.canonical_url }}" />
+      {% else %}
+         <link rel="canonical" href="{{ page.url }}" />
+      {% endif %}
+
+      {%- comment -%} Styles {%- endcomment -%}
       <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
       <link href="/vendor/phosphor-icons/css/phosphor.css" rel="stylesheet" />
       <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
       <link rel="stylesheet" href="/css/theme.css" />
+
+      {%- comment -%} Favicon {%- endcomment -%}
       <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
       <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
    </head>
