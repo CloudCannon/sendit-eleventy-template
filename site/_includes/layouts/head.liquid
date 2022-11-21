@@ -8,8 +8,8 @@
 
       {%- comment -%} Page description for SEO {%- endcomment -%}
       {% if seo.description %}
-         <meta name="description" content="{{ seo.description }}">
-         <meta property="og:description" content="{{ seo.description }}" />
+         <meta name="description" content="{{ seo.page_description }}">
+         <meta property="og:description" content="{{ seo.page_description }}" />
       {% else %}
          <meta name="description" content="{{ siteSEO.description }}">
          <meta property="og:description" content="{{ siteSEO.description }}" />

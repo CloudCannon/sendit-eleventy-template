@@ -1,4 +1,14 @@
 _inputs:
+  page_description:
+    comment: Defaults to the description set in the Site SEO data file
+  canonical_url:
+    comment: Defaults to the pages url
+  featured_image:
+    comment: Defaults to the image set in the Site SEO data file
+  open_graph_type:
+    comment: Defaults to the type 'website'
+  author_twitter_handle:
+    comment: Defaults to the twitter site value set in the Site SEO data file
   no_index:
     type: checkbox
     comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag

@@ -11,7 +11,7 @@ thumbImg:
 featuredImg:
   image_path: /images/blog/featured-image-1.jpg
 seo:
-  description: 
+  page_description: 
   canonical_url: 
   featured_image: /images/blog/featured-image-1.jpg
   author_twitter_handle: 
