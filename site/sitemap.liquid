@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
     {%- for page in collections.all %}
         {% unless page.data.seo.no_index %}
             <url>
-                <loc>{{ siteSEO.BaseURL }}{{ page.url | url }}</loc>
+                <loc>{{ site.BaseURL }}{{ page.url | url }}</loc>
                 <lastmod>{{ page.date | date: '%Y-%m-%d' }}</lastmod>
                 <changefreq>{% if page.data.change_frequency %}{{ page.data.change_frequency }}{% else %}monthly{% endif %}</changefreq>
             </url>

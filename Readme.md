@@ -33,3 +33,8 @@ Sendit is set up for adding, updating and removing pages, components, posts, nav
 
 * Reused around the site to save multiple editing locations.
 * Set in the *Data* section with respective names
+
+### SEO details and favicon
+
+* Favicon and site SEO details are set in the *Data* / *Site* section
+* SEO details can also be set in pages for page specific details
