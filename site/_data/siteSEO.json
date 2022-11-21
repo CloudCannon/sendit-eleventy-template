@@ -1,5 +1,5 @@
 {
-    "BaseURL": "http://example.org/",
+    "BaseURL": "http://example.org",
     "site_title": "Sendit",
     "description": "A polished, marketing website template built with Eleventy",
     "twitter_image": "/images/feature/feature-hero-two.png",

@@ -32,7 +32,8 @@
       "title": "other Page",
       "links": [
         { "link": "/blog", "text": "Blog" },
-        { "link": "/404", "text": "404" }
+        { "link": "/404", "text": "404" },
+        { "link": "/sitemap.xml", "text": "Sitemap"}
       ]
     },
     {
