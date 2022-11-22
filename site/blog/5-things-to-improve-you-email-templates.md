@@ -3,6 +3,7 @@ date: 2022-03-07
 title: 5 things to improve you email templates
 layout: layouts/blog-single.liquid
 tags:
+  - marketing
   - blog
 author: Aaron Britt
 thumbImg:
