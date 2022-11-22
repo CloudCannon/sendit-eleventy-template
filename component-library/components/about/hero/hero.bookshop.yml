@@ -14,14 +14,14 @@ blueprint:
   hero_images:
     - image: /images/about/aboutfeature-two.png
       image_alt: People working
-      placer: front_buttom
+      placement: front_bottom
     - image: /images/about/aboutfeature-three.png
       image_alt: Group of people looking at a computer
-      placer: back_top_right
+      placement: back_top_right
     - image: /images/about/aboutfeature-four.png
       image_alt: Staff group photo
-      placer: back_top_left
-  btn:
+      placement: back_top_left
+  button:
     text: "See more"
     link: "#counter-up"
 
@@ -32,10 +32,10 @@ preview:
 _inputs:
   description:
     type: markdown
-  placer:
+  placement:
     type: select
     options:
       values:
-        - front_buttom
+        - front_bottom
         - back_top_right
         - back_top_left

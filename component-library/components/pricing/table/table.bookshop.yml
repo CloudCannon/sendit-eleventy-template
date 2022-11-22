@@ -35,7 +35,7 @@ blueprint:
           is_active: false
         - item: Unlimited activity history
           is_active: false
-      btn:
+      button:
         link: /login
         text: Try This Free
 

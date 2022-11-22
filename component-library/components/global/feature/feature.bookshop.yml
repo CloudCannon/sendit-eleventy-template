@@ -13,7 +13,7 @@ blueprint:
   image_alt: Message inbox
   title: Text Message in One Minute
   description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last.
-  btn:
+  button:
     link: /signup
     text: Try This Free
   reversed: false

@@ -17,9 +17,9 @@ blueprint:
     heading: Email Address
     placeholder: Your Email
   checkbox_text: Remember Me
-  signin_btn:
+  signin_button:
     text: "Log In"
-  signup_btn:
+  signup_button:
     link: "/signup"
     text: "Create an Account"
 
