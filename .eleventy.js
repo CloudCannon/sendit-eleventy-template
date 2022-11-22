@@ -2,10 +2,8 @@ const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const { DateTime } = require("luxon");
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const { wordCount } = require("eleventy-plugin-wordcount");
-const MarkdownIt = require("markdown-it")({
-  html: true
-});
-md = new MarkdownIt();
+const MarkdownIt = require("markdown-it"),
+  md = new MarkdownIt();
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("length", (input) => {
