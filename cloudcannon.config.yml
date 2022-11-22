@@ -1,6 +1,6 @@
 collections_config:
   blog:
-    path: '/site/blog/'
+    path: '/blog'
 
 _inputs:
   page_description:
