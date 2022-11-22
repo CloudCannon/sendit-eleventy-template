@@ -83,7 +83,7 @@
       }
       &-body {
         padding: 0;
-        .card-text {
+        .card-text, .card-text p {
           line-height: 29.7px;
           color: $color-text-light;
           font-size: $base_font-size * 1.1;
