@@ -460,25 +460,11 @@ a {
                padding-left: $base-padding * 1.6;
                li {
                   position: relative;
-                  list-style: none;
                   line-height: 29.7px;
                   color: $color-text-light;
                   font-size: $base_font-size * 1.1;
                   font-weight: 500;
                   margin-bottom: $base-margin * 1.25;
-                  &::after {
-                     position: absolute;
-                     content: '';
-                     background: $color-header;
-                     width: 10px;
-                     height: 2px;
-                     top: 20%;
-                     left: -3%;
-                     @include media-breakpoint-down-xxl {
-                        top: 13%;
-                        left: -5%;
-                     }
-                  }
                }
             }
          }
