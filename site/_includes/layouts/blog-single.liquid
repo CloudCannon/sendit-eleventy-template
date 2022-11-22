@@ -18,9 +18,11 @@
                            <li class="list-inline-item">
                               <p>{{ content | emojiReadTime }}</p>
                            </li>
-                           <li class="list-inline-item">
-                              <p>{{ content | wordCount }}<span> words</span></p>
-                           </li>
+                           {% if content != "" %}
+                              <li class="list-inline-item">
+                                 <p>{{ content | wordCount }}<span> words</span></p>
+                              </li>
+                           {% endif %}
                         </ul>
                      </div>
                   </div>

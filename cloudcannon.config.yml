@@ -16,7 +16,7 @@ collections_config:
 
 _inputs:
   date:
-    type: date
+    instance_value: now
   social[*].icon:
     type: select
     options:
