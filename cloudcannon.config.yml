@@ -1,8 +1,32 @@
 collections_config:
+  pages:
+    _enabled_editors:
+      - visual
   blog:
     path: 'blog'
+    _enabled_editors:
+      - content
+      - visual
 
 _inputs:
+  social_icon:
+    type: select
+    options:
+      values:
+        - ph-facebook-logo
+        - ph-instagram-logo
+        - ph-twitter-logo
+        - ph-github-logo
+        - ph-youtube-logo
+  description:
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      link: true
+      removeformat: true
+  isActive:
+    type: switch
   page_description:
     comment: Defaults to the description set in the Site SEO data file
   favicon_icon:
