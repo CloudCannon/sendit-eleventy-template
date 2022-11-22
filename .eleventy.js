@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
       pathPrefix: "",
     })
   );
+  eleventyConfig.ignores.add("site/schemas");
   eleventyConfig.addPassthroughCopy("site/css");
   eleventyConfig.addPassthroughCopy("site/fonts");
   eleventyConfig.addPassthroughCopy("site/images");
