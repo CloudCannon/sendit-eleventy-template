@@ -2,14 +2,14 @@ collections_config:
   pages:
     schemas:
       page:
-        path: schemas/page.html
+        path: site/schemas/page.html
     _enabled_editors:
       - visual
   blog:
     path: 'blog'
     schemas:
       default:
-        path: schemas/post.md
+        path: site/schemas/post.md
     _enabled_editors:
       - content
       - visual
