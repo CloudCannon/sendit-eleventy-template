@@ -9,7 +9,7 @@ collections_config:
       - visual
 
 _inputs:
-  social_icon:
+  social.icon:
     type: select
     options:
       values:
