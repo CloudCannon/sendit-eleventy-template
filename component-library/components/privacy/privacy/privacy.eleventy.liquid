@@ -10,8 +10,7 @@
             class="scrollspy-example"
             tabindex="0"
           >
-            {% for item in privacy %}
-              {% if item.key == "descriptive" %}
+            {% for item in terms_and_conditions %}
               <div class="privacy-items" id="item{{forloop.index}}">
                 <div class="card">
                   <h3 class="sub-title">{{item.heading}}</h3>
@@ -20,25 +19,13 @@
                   </div>
                 </div>
               </div>
-              {% else %}
-              <div class="privacy-items" id="item{{forloop.index}}">
-                <div class="card">
-                  <h3 class="sub-title">{{item.heading}}</h3>
-                  <div class="card-body">
-                    <div class="card-text">
-                    {{ item.description | markdownify }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {% endif %}
             {% endfor %}
           </div>
         </div>
         <div class="col-lg-4">
           <nav id="scrol-nav" class="navbar navbar-light privacy-nav">
             <ul class="nav nav-pills">
-              {% for item in privacy %}
+              {% for item in terms_and_conditions %}
                 {% if forloop.index == 1 %}
                 <li class="nav-item">
                   <a class="nav-link active" href="#item{{forloop.index}}"
