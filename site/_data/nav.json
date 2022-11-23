@@ -8,5 +8,5 @@
     { "link": "/blog", "text": "Blog" },
     { "link": "/contact", "text": "Contact" }
   ],
-  "btn": { "link": "/signup", "text": "Get Started" }
+  "button": { "link": "/signup", "text": "Get Started" }
 }
