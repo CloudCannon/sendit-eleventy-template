@@ -11,7 +11,10 @@
                      <a href="tel:{{phone.cell}}"
                         >{{phone.cell}}
                         <span>
-                           <img src="/images/contact/call-add.svg" alt="call-add" loading="lazy" />
+                           <img 
+                              src="{{ phone.image }}" 
+                              alt="{{ phone.image_alt }}" 
+                              loading="lazy" />
                         </span>
                      </a>
                   </div>
@@ -21,8 +24,8 @@
                         >{{email.email}}
                         <span>
                            <img
-                              src="/images/contact/directbox-send.svg"
-                              alt="send-box"
+                              src="{{ email.image }}"
+                              alt="{{ email.image_alt }}"
                               loading="lazy"
                            />
                         </span>
