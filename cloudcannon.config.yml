@@ -63,4 +63,8 @@ _inputs:
     hidden: true
   eleventyExcludeFromCollections:
     hidden: true
+
+_structures:
+  links:
+    icon: link
   
