@@ -14,9 +14,9 @@ blueprint:
   description: "The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last."
   alternate_style: false
   numbers:
-    - number: 300
+    - prefix: "$"
+      number: 300
       suffix: "m"
-      prefix: "$"
       text: "Venture capital raised"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser

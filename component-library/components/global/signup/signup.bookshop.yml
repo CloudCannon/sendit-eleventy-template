@@ -23,8 +23,8 @@ blueprint:
       heading: Retype Password
     checkbox_text: By registering, you accept our Conditions, Use Policy and
       Privacy Notice.
-    signup_text: Create an Account
-    login_button:
+    sign_up_text: Create an Account
+    log_in_button:
       link: /login
       text: Log In
 

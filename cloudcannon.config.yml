@@ -17,6 +17,8 @@ collections_config:
 _inputs:
   date:
     instance_value: now
+  title_suffix:
+    comment: Added at the end of the title and highlighted in a different color
   social[*].icon:
     type: select
     options:

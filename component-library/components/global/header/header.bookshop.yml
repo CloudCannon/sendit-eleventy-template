@@ -12,7 +12,7 @@ blueprint:
   title: Sendit
   title_suffix: Features
   description: Sendit is the most complete solution to create beautiful email designs, manage mails and send them out at the best price.
-  no_top_pad: false
+  remove_top_padding: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

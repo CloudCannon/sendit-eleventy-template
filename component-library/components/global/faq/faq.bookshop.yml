@@ -12,7 +12,7 @@ blueprint:
   title: Have
   title_suffix: Questions?
   description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last.
-  faq:
+  FAQ:
     - title: What if I unplug all selected apps at once?
       description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo quasi quia doloremque dignissimos rerum perspiciatis, officiis optio natus beatae!
 
