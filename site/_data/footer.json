@@ -10,8 +10,14 @@
       "link": "https://www.instagram.com/",
       "icon": "ph-instagram-logo"
     },
-    { "link": "https://twitter.com/", "icon": "ph-twitter-logo" },
-    { "link": "https://www.github.com/", "icon": "ph-github-logo" },
+    {
+      "link": "https://twitter.com/",
+      "icon": "ph-twitter-logo"
+    },
+    {
+      "link": "https://www.github.com/",
+      "icon": "ph-github-logo"
+    },
     {
       "link": "https://www.youtube.com/",
       "icon": "ph-youtube-logo"
@@ -21,25 +27,52 @@
     {
       "title": "Main Pages",
       "links": [
-        { "link": "/", "text": "Home" },
-        { "link": "/feature", "text": "Feature" },
-        { "link": "/pricing", "text": "Price" },
-        { "link": "/about", "text": "About" }
+        {
+          "link": "/",
+          "text": "Home"
+        },
+        {
+          "link": "/feature",
+          "text": "Feature"
+        },
+        {
+          "link": "/pricing",
+          "text": "Price"
+        },
+        {
+          "link": "/about",
+          "text": "About"
+        }
       ]
     },
     {
       "title": "other Page",
       "links": [
-        { "link": "/blog", "text": "Blog" },
-        { "link": "/404", "text": "404" },
-        { "link": "/sitemap.xml", "text": "Sitemap"}
+        {
+          "link": "/blog",
+          "text": "Blog"
+        },
+        {
+          "link": "/404",
+          "text": "404"
+        },
+        {
+          "link": "/sitemap.xml",
+          "text": "Sitemap"
+        }
       ]
     },
     {
       "title": "Other Page",
       "links": [
-        { "link": "/contact", "text": "Contact" },
-        { "link": "/privacy", "text": "Privacy and Policy" }
+        {
+          "link": "/contact",
+          "text": "Contact"
+        },
+        {
+          "link": "/privacy",
+          "text": "Privacy Policy"
+        }
       ]
     }
   ]
