@@ -19,22 +19,6 @@ blueprint:
       feature:
         - item: 1 Site Activation
           active_feature: true
-        - item: 1 Year Premium Support
-          active_feature: true
-        - item: Regular Update for 1 Year
-          active_feature: true
-        - item: 90+ Widgets & Extensions
-          active_feature: true
-        - item: 23+ Templates
-          active_feature: true
-        - item: Over 800 Section Blocks
-          active_feature: false
-        - item: Support
-          active_feature: false
-        - item: 3 filters
-          active_feature: false
-        - item: Unlimited activity history
-          active_feature: false
       button:
         link: /login
         text: Try This Free
