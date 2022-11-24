@@ -29,6 +29,14 @@ _inputs:
     options:
       preview:
         icon: link
+  links:
+    options:
+      preview:
+        icon: link
+  items:
+    options:
+      preview:
+        icon: link
   social[*].icon:
     type: select
     options:

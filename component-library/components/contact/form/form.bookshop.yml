@@ -43,4 +43,24 @@ blueprint:
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs: {}
+_inputs: 
+  fullname:
+    options:
+      preview:
+        icon: person
+  phone:
+    options:
+      preview:
+        icon: phone
+  email:
+    options:
+      preview:
+        icon: email
+  message:
+    options:
+      preview:
+        icon: drive_file_rename
+  submit_button:
+    options:
+      preview:
+        icon: send

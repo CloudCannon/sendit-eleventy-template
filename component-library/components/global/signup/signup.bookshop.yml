@@ -32,4 +32,24 @@ blueprint:
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs: {}
+_inputs: 
+  fullname:
+    options:
+      preview:
+        icon: person
+  email:
+    options:
+      preview:
+        icon: email
+  password:
+    options:
+      preview:
+        icon: password
+  retype_password:
+    options:
+      preview:
+        icon: password
+  log_in_button:
+    options:
+      preview:
+        icon: login
