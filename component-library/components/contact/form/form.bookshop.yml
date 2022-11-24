@@ -59,7 +59,7 @@ _inputs:
   message:
     options:
       preview:
-        icon: drive_file_rename
+        icon: drive_file_rename_outline
   submit_button:
     options:
       preview:
