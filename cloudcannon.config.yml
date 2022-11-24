@@ -18,7 +18,7 @@ _inputs:
   social:
     options:
       structures:
-        icon: link
+        icon: Link
   date:
     instance_value: now
   title_suffix:
