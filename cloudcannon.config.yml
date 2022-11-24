@@ -15,10 +15,6 @@ collections_config:
       - visual
 
 _inputs:
-  social:
-    options:
-      structures:
-        icon: Link
   date:
     instance_value: now
   title_suffix:
@@ -67,4 +63,9 @@ _inputs:
     hidden: true
   eleventyExcludeFromCollections:
     hidden: true
+
+_structures:
+  social:
+    values:
+      - icon: Link
   
