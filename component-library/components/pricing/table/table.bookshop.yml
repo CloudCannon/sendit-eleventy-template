@@ -16,7 +16,7 @@ blueprint:
       price: 0
       has_discount: false
       discount_price: 0
-      feature:
+      features:
         - item: 1 Site Activation
           active_feature: true
       button:

@@ -29,7 +29,7 @@
                {% endif %}
                <div class="card-body">
                   <ul class="list-unstyled">
-                     {% for feature in item.feature %}
+                     {% for feature in item.features %}
                      <li class="{% if feature.active_feature == false %} deactive {% endif %}">
                         <i class="ph-check {% if feature.active_feature == false %} deactive {% endif %}"></i>
                         {{feature.item}}
