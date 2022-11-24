@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <title>{{title}} | Sendit</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="Sendit is a email marketing tool which ensure the business growth">
-      <link href="/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="/css/theme.css" />
-      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-      <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-   </head>
-   <body>
+{% include './layouts/head.liquid' %}
       {% block content %} {% bookshop_include "page" content_blocks: content_blocks %} {%
       endblock %}
       <script src="/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-   </body>
-</html>
+{% include './layouts/tail.liquid' %}
