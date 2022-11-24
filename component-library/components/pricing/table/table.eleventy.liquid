@@ -3,7 +3,7 @@
       <div class="row">
          {% for item in pricing_tier %}
          <div class="col-lg-4">
-            <div class="card pricing-item {% if item.is_active %} active {% endif %}">
+            <div class="card pricing-item {% if item.highlight_tier %} active {% endif %}">
                <h5 class="card-title">{{item.tier}}</h5>
                <p class="card-text">{{item.description}}</p>
                {% if item.has_discount %}
@@ -30,8 +30,8 @@
                <div class="card-body">
                   <ul class="list-unstyled">
                      {% for feature in item.feature %}
-                     <li class="{% if feature.is_active == false %} deactive {% endif %}">
-                        <i class="ph-check {% if feature.is_active == false %} deactive {% endif %}"></i>
+                     <li class="{% if feature.active_feature == false %} deactive {% endif %}">
+                        <i class="ph-check {% if feature.active_feature == false %} deactive {% endif %}"></i>
                         {{feature.item}}
                      </li>
                      {% endfor %}
