@@ -25,6 +25,10 @@ _inputs:
     hidden: true
   pagination.size:
     type: number
+  social:
+    options:
+      preview:
+        icon: link
   social[*].icon:
     type: select
     options:
@@ -63,8 +67,4 @@ _inputs:
     hidden: true
   eleventyExcludeFromCollections:
     hidden: true
-
-_structures:
-  social:
-    icon: link
   
