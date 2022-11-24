@@ -67,5 +67,6 @@ _inputs:
 _structures:
   social:
     values:
-      - icon: Link
+      - value:
+        icon: Link
   
