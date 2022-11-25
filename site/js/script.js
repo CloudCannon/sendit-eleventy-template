@@ -62,17 +62,4 @@ $(document).ready(function () {
     }
   });
   //end  Scroll spy style
-
-  // Add active class to the current accordionExample
-  var header = document.getElementById("accordionExample");
-  var btns = header && header.getElementsByClassName("accordion-item");
-  if (btns) {
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("shows");
-        current[0].className = current[0].className.replace(" shows", "");
-        this.className += " shows";
-      });
-    }
-  }
 });

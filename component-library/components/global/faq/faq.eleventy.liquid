@@ -1,3 +1,11 @@
+<script>
+   function onClick (element) {
+		const accordionItem = element.closest('.accordion-item')
+		var current = document.getElementsByClassName('shows');
+		current[0].className = current[0].className.replace(' shows', '');
+		accordionItem.className += ' shows';
+	}
+</script>
 <section class="faq-two">
    <div class="container">
       <div class="row">
@@ -23,6 +31,7 @@
                         data-bs-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne"
+                        onclick="onClick(this)"
                      >
                         <p class="header-content">{{item.title}}</p>
                      </button>
@@ -47,6 +56,7 @@
                         data-bs-target="#collapse{{forloop.index}}"
                         aria-expanded="false"
                         aria-controls="collapse{{forloop.index}}"
+                        onclick="onClick(this)"
                      >
                         <p class="header-content">{{item.title}}</p>
                      </button>
