@@ -10,7 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: Choose a plan that works best for you.
-  description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last.
+  description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

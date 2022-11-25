@@ -10,7 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   title: One mission to make the better marketing
-  description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing.
+  description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
   hero_images:
     - image: /images/about/aboutfeature-two.png
       image_alt: People working

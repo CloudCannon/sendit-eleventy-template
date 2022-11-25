@@ -12,7 +12,7 @@ blueprint:
   image: /images/feature/feature-card-one.png
   image_alt: Message inbox
   title: Text Message in One Minute
-  description: The stats are in our favour. SaaSFlow doesn't just help you with your email marketing, we get you customer relationships that last.
+  description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
   button:
     link: /signup
     text: Try This Free
