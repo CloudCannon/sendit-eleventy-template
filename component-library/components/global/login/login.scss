@@ -31,6 +31,18 @@
    }
 
    &-items {
+      .button-group {
+         display: grid;
+         gap: 16px;
+         grid-template-columns: 1fr 1fr;
+
+         .btn-social {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            justify-content: center;
+            align-items: center;
+         }
+      }
       .form-control {
          display: block;
          width: 100%;
