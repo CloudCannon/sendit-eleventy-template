@@ -69,9 +69,16 @@
          }
       }
 
+      &:nth-child(4) {
+         .counter-up-content-item {
+            border-right: 0;
+         }
+      }
+
       &-item {
          border-top: 1px solid $color-primary-light;
          border-right: 1px solid $color-primary-light;
+         
          padding: $base-padding * 2.6 $base-padding * 2 0;
          @include media-breakpoint-down-xxl {
             padding: $base-padding * 2 $base-padding * 2 0;
