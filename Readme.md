@@ -2,6 +2,10 @@
 
 Sendit is a polished, marketing website template for Eleventy. Browse through a [live demo](https://potent-ship.cloudvent.net/).
 
+![Sendit template screenshot](/images/_screenshot.png)
+
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/sendit-eleventy-template)
+
 ## Features
 
 - Pre-built pages
