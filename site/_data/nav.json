@@ -1,12 +1,38 @@
 {
   "logo": "/images/logo.svg",
   "items": [
-    { "link": "/", "text": "Home" },
-    { "link": "/feature", "text": "Feature" },
-    { "link": "/pricing", "text": "Pricing" },
-    { "link": "/about", "text": "About" },
-    { "link": "/blog", "text": "Blog" },
-    { "link": "/contact", "text": "Contact" }
+    {
+      "link": "/",
+      "text": "Home"
+    },
+    {
+      "link": "/feature/",
+      "text": "Feature"
+    },
+    {
+      "link": "/pricing/",
+      "text": "Pricing"
+    },
+    {
+      "link": "/about/",
+      "text": "About"
+    },
+    {
+      "link": "/blog/",
+      "text": "Blog"
+    },
+    {
+      "link": "/contact/",
+      "text": "Contact"
+    }
   ],
-  "button": { "link": "/signup", "text": "Get Started" }
+  "button": {
+    "link": "/signup",
+    "text": "Get Started"
+  },
+  "_inputs": {
+    "logo": {
+      "type": "image"
+    }
+  }
 }
