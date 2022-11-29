@@ -558,12 +558,8 @@ a {
 .Learn-more {
    display: flex;
    align-items: center;
-   @include media-breakpoint-down-lg {
-      margin-top: $base-margin * 3;
-   }
-   @include media-breakpoint-down-sm {
-      margin-top: $base-margin * 1.25;
-   }
+   margin-top: $base-margin;
+      
    a {
       color: $color-primary;
       display: flex;
