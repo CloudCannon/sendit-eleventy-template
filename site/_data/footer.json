@@ -4,23 +4,28 @@
   "social": [
     {
       "link": "https://www.facebook.com/",
-      "icon": "ph-facebook-logo"
+      "icon": "ph-facebook-logo",
+      "icon_alt": "Facebook"
     },
     {
       "link": "https://www.instagram.com/",
-      "icon": "ph-instagram-logo"
+      "icon": "ph-instagram-logo",
+      "icon_alt": "Instagram"
     },
     {
       "link": "https://twitter.com/",
-      "icon": "ph-twitter-logo"
+      "icon": "ph-twitter-logo",
+      "icon_alt": "Twitter"
     },
     {
       "link": "https://www.github.com/",
-      "icon": "ph-github-logo"
+      "icon": "ph-github-logo",
+      "icon_alt": "GitHub"
     },
     {
       "link": "https://www.youtube.com/",
-      "icon": "ph-youtube-logo"
+      "icon": "ph-youtube-logo",
+      "icon_alt": "YouTube"
     }
   ],
   "sections": [

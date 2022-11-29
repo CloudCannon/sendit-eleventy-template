@@ -16,7 +16,7 @@
                         <ul class="list-unstyled">
                            {% for item in footer.social %}
                            <li>
-                              <a href="{{ item.link }}"> <i class="{{ item.icon }}"></i></a>
+                              <a href="{{ item.link }}"> <i class="{{ item.icon }}" aria-hidden="true"></i><span class="visually-hidden">{{ item.icon_alt }}</span></a>
                            </li>
                            {% endfor %}
                         </ul>
