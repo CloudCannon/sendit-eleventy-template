@@ -15380,15 +15380,20 @@ a {
          }
          h3 {
             font-size: $base-font-size * 1.9;
-            margin-bottom: $base-margin * 1.5;
+            margin-top: $base-margin * 3;
+            margin-bottom: $base-margin;
             line-height: 43px;
+         }
+         h2, h4, h5, h6 {
+            margin-top: $base-margin * 3;
+            margin-bottom: $base-margin;
          }
          p {
             font-size: $base-font-size * 1.1;
-            margin-bottom: $base-margin * 5;
+            margin-bottom: $base-margin;
             line-height: 29px;
             @include media-breakpoint-down-xl {
-               margin-bottom: $base-margin * 3.1;
+               margin-bottom: $base-margin;
             }
          }
 
