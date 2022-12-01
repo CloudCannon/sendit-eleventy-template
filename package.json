@@ -4,11 +4,12 @@
   "description": "Sendit is a email marketing tool which ensure the business growth",
   "scripts": {
     "bookshop:watch": "bookshop-browser",
+    "bookshop-sass:fetch-theme-color": "node site/js/fetch-theme-color.js",
     "bookshop-sass:build": "bookshop-sass -b component-library -o site/css/theme.css",
     "bookshop-sass:watch": "bookshop-sass -b component-library -o site/css/theme.css -w",
     "eleventy:build": "eleventy",
     "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
-    "start": "npm-run-all bookshop-sass:build --parallel bookshop-sass:watch bookshop:watch eleventy:watch"
+    "start": "npm-run-all bookshop-sass:fetch-theme-color bookshop-sass:build --parallel bookshop-sass:watch bookshop:watch eleventy:watch"
   },
   "author": "CloudCannon",
   "license": "MIT",
