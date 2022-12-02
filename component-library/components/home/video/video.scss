@@ -31,6 +31,9 @@
          }
       }
       .effect-one {
+         -webkit-mask-image: url(/images/video/effect-one.png);
+         mask-image: url(/images/video/effect-one.png);
+         background: $color-primary;
          position: absolute;
          top: 54%;
          left: -89px;
@@ -44,9 +47,15 @@
          @include media-breakpoint-down-md {
             top: 40%;
          }
+         img {
+            visibility: hidden;
+         }
       }
 
       .effect-two {
+         -webkit-mask-image: url(/images/video/effect-two.png);
+         mask-image: url(/images/video/effect-two.png);
+         background: $color-primary;
          position: absolute;
          top: -96px;
          right: -80px;
@@ -56,6 +65,9 @@
          }
          @include media-breakpoint-down-md {
             right: -234px;
+         }
+         img {
+            visibility: hidden;
          }
       }
    }

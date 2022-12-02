@@ -104,12 +104,16 @@
       }
     }
     .effect {
+      -webkit-mask-image: url(/images/contact/effects.png);
+      mask-image: url(/images/contact/effects.png);
+      background: $color-primary;
       position: absolute;
       top: -10%;
       left: -14%;
       z-index: -1;
       img {
         max-width: 100%;
+        visibility: hidden;
       }
     }
   }

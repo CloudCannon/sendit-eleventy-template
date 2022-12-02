@@ -56,6 +56,9 @@
          opacity: 0.2;
       }
       .effect {
+         -webkit-mask-image: url(/images/works/effect.png);
+         mask-image: url(/images/works/effect.png);
+         background: $color-primary;
          position: absolute;
          top: -96px;
          left: -89px;
@@ -64,6 +67,9 @@
             img {
                max-width: 100%;
             }
+         }
+         img {
+            visibility: hidden;
          }
       }
       .video {

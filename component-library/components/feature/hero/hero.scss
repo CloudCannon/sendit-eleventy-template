@@ -60,10 +60,16 @@
          max-width: 100%;
       }
       .shape {
+         -webkit-mask-image: url(/images/feature/effect-4.png);
+         mask-image: url(/images/feature/effect-4.png);
+         background: $color-primary;
          position: absolute;
          top: 2%;
          z-index: -1;
          right: 0%;
+         img {
+            visibility: hidden;
+         }
       }
    }
 }

@@ -158,13 +158,16 @@
         width: 30%;
       }
     }
-    .pattern,
-    .pattern-two {
+    .pattern {
+      -webkit-mask-image: url(/images/about/patterns-two.png);
+      mask-image: url(/images/about/patterns-two.png);
+      background: $color-primary;
       position: absolute;
       top: 0;
       left: -20px;
       img {
         max-width: 100%;
+        visibility: hidden;
       }
       @include media-breakpoint-down-xxl {
         left: -100px;

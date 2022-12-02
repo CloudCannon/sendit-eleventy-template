@@ -107,11 +107,24 @@
                left: 58%;
             }
          }
-         .shape {
+         .shape-one {
+            -webkit-mask-image: url(/images/pricing/shape-one.png);
+            mask-image: url(/images/pricing/shape-one.png);
+            background: $color-primary;
+         }
+         .shape-two {
+            -webkit-mask-image: url(/images/pricing/shape-two.png);
+            mask-image: url(/images/pricing/shape-two.png);
+            background: $color-primary;
+         }
+         .shape-two, .shape-one {
             position: absolute;
             top: 10px;
             z-index: -1;
             left: 10%;
+            img {
+               visibility: hidden;
+            }
          }
       }
       &-body {

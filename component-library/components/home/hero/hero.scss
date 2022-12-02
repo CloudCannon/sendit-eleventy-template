@@ -17,10 +17,17 @@
     padding: $base-padding * 5.5 0 $base-padding * 5;
   }
   &-shape {
+    -webkit-mask-image: url(/images/hero/hero-two-shape.png);
+    mask-image: url(/images/hero/hero-two-shape.png);
+    background: $color-primary;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+
+    img {
+      visibility: hidden;
+    }
   }
   &-content {
     margin-top: 3rem;
@@ -69,6 +76,9 @@
       border-radius: 0px;
     }
     &-shape {
+      -webkit-mask-image: url(/images/hero/hero-three-shape.png);
+      mask-image: url(/images/hero/hero-three-shape.png);
+      background: $color-primary;
       position: absolute;
       top: -26%;
       left: 3%;
@@ -76,6 +86,9 @@
       @include media-breakpoint-down-lg {
         top: -27%;
         left: -22%;
+      }
+      img {
+        visibility: hidden;
       }
     }
   }

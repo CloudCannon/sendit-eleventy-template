@@ -19,8 +19,7 @@
       }
     }
     .effect-one,
-    .effect-two,
-    .effect-three {
+    .effect-two {
       position: absolute;
       top: -8%;
       z-index: -1;
@@ -29,15 +28,22 @@
         @include media-breakpoint-down-xxl {
           max-width: 100%;
         }
+        visibility: hidden;
       }
     }
     .effect-one {
+      -webkit-mask-image: url(/images/feature/effect-1.png);
+      mask-image: url(/images/feature/effect-1.png);
+      background: $color-primary;
       left: -11%;
       @include media-breakpoint-down-lg {
         left: -4%;
       }
     }
     .effect-two {
+      -webkit-mask-image: url(/images/feature/effect-2.png);
+      mask-image: url(/images/feature/effect-2.png);
+      background: $color-primary;
       top: -21%;
       right: -17%;
       @include media-breakpoint-down-xxl {
@@ -49,10 +55,6 @@
           width: 100%;
         }
       }
-    }
-    .effect-three {
-      top: -13%;
-      left: -7%;
     }
   }
   &-item-content {
