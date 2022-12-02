@@ -23,16 +23,17 @@ fs.readFile('./site/_data/site.json', 'utf8', function(err, dataFile){
 
         // Change the variables to whatever was set in the data file
         if (dataFile.theme.primary_color) {
+            console.log("primary color set")
             const replacementString = dataFile.theme.primary_color;
-            replaced = scssFile.replace(/\$color-primary: .*/g, ('$color-primary: ' + replacementString + ';'));
+            replaced = replaced.replace(/\$color-primary: .*/g, ('$color-primary: ' + replacementString + ';'));
         } 
         if (dataFile.theme.secondary_color) {
             const replacementString = dataFile.theme.secondary_color;
-            replaced = scssFile.replace(/\$color-secondary: .*/g, ('$color-primary: ' + replacementString + ';'));
+            replaced = replaced.replace(/\$color-secondary: .*/g, ('$color-secondary: ' + replacementString + ';'));
         }         
         if (dataFile.theme.anchor_color) {
             const replacementString = dataFile.theme.anchor_color;
-            replaced = scssFile.replace(/\$color-anchor: .*/g, ('$color-anchor: ' + replacementString + ';'));
+            replaced = replaced.replace(/\$color-anchor: .*/g, ('$color-anchor: ' + replacementString + ';'));
         } 
 
         // Write result back to variables.scss
