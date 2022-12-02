@@ -13,6 +13,7 @@ Sendit is a polished, marketing website template for Eleventy. Browse through a 
 - Blog with pagination and category pages
 - Configurable navigation and footer
 - Multiple hero options
+- Configurable theme colors
 - Optimised for editing in CloudCannon
 
 ## Setup
@@ -23,9 +24,8 @@ Get a workflow going to see your site's output (with [CloudCannon](https://app.c
 
 ## Quickstart
 
-2. Run `yarn` to install the modules.
-3. Run `yarn start` to run the project. this will create a \_start folder, where all the developed file will remain.
-4. To built the final project, run `yarn eleventy:build` command.
+2. Run `npm i` to install the modules.
+3. Run `npm run start` to run the project. this will create a \_site folder, where all the developed file will remain.
 
 By default the site will be at `http://localhost:8080`
 
@@ -42,3 +42,9 @@ Sendit is set up for adding, updating and removing pages, components, posts, nav
 
 * Favicon and site SEO details are set in the *Data* / *Site* section
 * SEO details can also be set in pages for page specific details
+
+### Theme colors
+
+* Theme colors can be set in *Data* / *Site* / *theme*
+* The main colors are set and variants of them are computed
+* The colors will update on the next build
