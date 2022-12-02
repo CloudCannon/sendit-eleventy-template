@@ -848,7 +848,7 @@ a {
    &-links {
       background: transparent;
       color: $color-primary;
-      border: 1px solid rgba(229, 59, 42, 0.3);
+      border: 1px solid $color-secondary-light;
       position: relative;
       transition: all 0.3s ease-in-out;
 
@@ -860,7 +860,7 @@ a {
       &:hover {
          color: $color-white;
          background: $color-primary;
-         border: $base-border-width solid rgba(229, 59, 42, 0.3);
+         border: $base-border-width solid $color-secondary-light;
       }
    }
    &-white {

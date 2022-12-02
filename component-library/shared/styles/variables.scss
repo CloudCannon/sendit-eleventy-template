@@ -18,18 +18,21 @@ $color-cyan-dark: #f3f3f3;
 $color-cyan-light: #5f5f5f;
 $color-gray-light: #fdfdfd;
 $color-gray-dark: #fff4f2;
-$color-primary: #e53b2a; //overwritten by site.json -> theme -> primary_color if set
+//overwritten by site.json -> theme -> primary_color if set
+$color-primary: #e53b2a;
 $color-primary-light: #e6ebf4;
 $color-primary-dark: mix($color-primary, $color-white, 12%);
-$color-secondary: #fffbf3; //overwritten by site.json -> theme -> secondary_color if set
+//overwritten by site.json -> theme -> secondary_color if set
+$color-secondary: #fffbf3; 
 $color-secondary-light: mix($color-primary, $color-white, 16%);
 $color-secondary-dark: #f7f8fa;
+//overwritten by site.json -> theme -> anchor_color if set
 $color-anchor: #ffba08;
 $color-anchor-dark: mix($color-anchor, $color-white, 30%);
 
 $color-header: #000;
-$color-header-light: #fffbf3;
-$color-header-dark: #fff7e1;
+$color-header-light: mix($color-anchor, $color-white, 4%);
+$color-header-dark: mix($color-anchor, $color-white, 12%);
 $color-text: #282828;
 $color-deactive: #ababab;
 $color-text-dark: #dddddd;
