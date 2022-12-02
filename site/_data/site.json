@@ -7,7 +7,11 @@
     "twitter_image": "/images/feature/feature-hero-two.png",
     "twitter_site": "@twitter_site",
     "image": "/images/feature/feature-hero.png",
-    "primary_theme_color": "#e53b2a",
+    "theme": {
+        "primary_color": "#e53b2a",
+        "secondary_color": "#fffbf3",
+        "anchor_color": "#ffba08"
+    },
     "_inputs": {
         "twitter_site": {
             "type": "twitter"

@@ -19,11 +19,22 @@ fs.readFile('./site/_data/site.json', 'utf8', function(err, dataFile){
             return;
         }
 
-        const replacementString = dataFile.primary_theme_color;
+        var replaced = scssFile;
 
-        // Change the color-primary variable to whatever was set in the data file
-        const replaced = scssFile.replace(/\$color-primary: .*/g, ('$color-primary: ' + replacementString + ';'));
-    
+        // Change the variables to whatever was set in the data file
+        if (dataFile.theme.primary_color) {
+            const replacementString = dataFile.theme.primary_color;
+            replaced = scssFile.replace(/\$color-primary: .*/g, ('$color-primary: ' + replacementString + ';'));
+        } 
+        if (dataFile.theme.secondary_color) {
+            const replacementString = dataFile.theme.secondary_color;
+            replaced = scssFile.replace(/\$color-secondary: .*/g, ('$color-primary: ' + replacementString + ';'));
+        }         
+        if (dataFile.theme.anchor_color) {
+            const replacementString = dataFile.theme.anchor_color;
+            replaced = scssFile.replace(/\$color-anchor: .*/g, ('$color-anchor: ' + replacementString + ';'));
+        } 
+
         // Write result back to variables.scss
         fs.writeFile('./component-library/shared/styles/variables.scss', replaced, 'utf-8', function (err) {
             if(err){
