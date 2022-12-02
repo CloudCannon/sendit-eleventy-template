@@ -16,12 +16,12 @@ $color-gray: #fcfcfc;
 $color-cyan: #808080;
 $color-cyan-dark: #f3f3f3;
 $color-cyan-light: #5f5f5f;
-$color-gray-light: #fdfdfd;
-$color-gray-dark: #fff4f2;
 //overwritten by site.json -> theme -> primary_color if set
 $color-primary: #e53b2a;
 $color-primary-light: #e6ebf4;
 $color-primary-dark: mix($color-primary, $color-white, 12%);
+$color-gray-light: mix($color-primary, $color-white, 2%);
+$color-gray-dark: mix($color-primary, $color-white, 6%);
 //overwritten by site.json -> theme -> secondary_color if set
 $color-secondary: #fffbf3; 
 $color-secondary-light: mix($color-primary, $color-white, 16%);
