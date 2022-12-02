@@ -23,7 +23,6 @@ fs.readFile('./site/_data/site.json', 'utf8', function(err, dataFile){
 
         // Change the variables to whatever was set in the data file
         if (dataFile.theme.primary_color) {
-            console.log("primary color set")
             const replacementString = dataFile.theme.primary_color;
             replaced = replaced.replace(/\$color-primary: .*/g, ('$color-primary: ' + replacementString + ';'));
         } 
