@@ -29,6 +29,8 @@ $color-secondary-dark: #f7f8fa;
 //overwritten by site.json -> theme -> anchor_color if set
 $color-anchor: #ffba08;
 $color-anchor-dark: mix($color-anchor, $color-white, 30%);
+//overwritten by site.json -> theme -> background_effects_color if set
+$color-background-effects: #faaa8f;
 
 $color-header: #000;
 $color-header-light: mix($color-anchor, $color-white, 4%);

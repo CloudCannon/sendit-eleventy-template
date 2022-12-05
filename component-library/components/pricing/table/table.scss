@@ -110,12 +110,12 @@
          .shape-one {
             -webkit-mask-image: url(/images/pricing/shape-one.png);
             mask-image: url(/images/pricing/shape-one.png);
-            background: $color-primary;
+            background: $color-background-effects;
          }
          .shape-two {
             -webkit-mask-image: url(/images/pricing/shape-two.png);
             mask-image: url(/images/pricing/shape-two.png);
-            background: $color-primary;
+            background: $color-background-effects;
          }
          .shape-two, .shape-one {
             position: absolute;

@@ -19,7 +19,7 @@
   &-shape {
     -webkit-mask-image: url(/images/hero/hero-two-shape.png);
     mask-image: url(/images/hero/hero-two-shape.png);
-    background: $color-primary;
+    background: $color-background-effects;
     position: absolute;
     top: 0;
     left: 0;
@@ -80,7 +80,7 @@
     &-shape {
       -webkit-mask-image: url(/images/hero/hero-three-shape.png);
       mask-image: url(/images/hero/hero-three-shape.png);
-      background: $color-primary;
+      background: $color-background-effects;
       width: 904px;
       height: 1016px;
       position: absolute;

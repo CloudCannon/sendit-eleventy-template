@@ -32,7 +32,7 @@
     .effect-one {
       -webkit-mask-image: url(/images/feature/effect-1.png);
       mask-image: url(/images/feature/effect-1.png);
-      background: $color-primary;
+      background: $color-background-effects;
       left: -11%;
       width: 110%;
       height: 125%;
@@ -45,7 +45,7 @@
     .effect-two {
       -webkit-mask-image: url(/images/feature/effect-2.png);
       mask-image: url(/images/feature/effect-2.png);
-      background: $color-primary;
+      background: $color-background-effects;
       width: 132%;
       height: 130%;
       top: -21%;

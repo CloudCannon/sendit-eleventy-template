@@ -33,7 +33,7 @@
       .effect-one {
          -webkit-mask-image: url(/images/video/effect-one.png);
          mask-image: url(/images/video/effect-one.png);
-         background: $color-primary;
+         background: $color-background-effects;
          position: absolute;
          top: 54%;
          left: -89px;
@@ -54,7 +54,7 @@
       .effect-two {
          -webkit-mask-image: url(/images/video/effect-two.png);
          mask-image: url(/images/video/effect-two.png);
-         background: $color-primary;
+         background: $color-background-effects;
          position: absolute;
          top: -96px;
          right: -80px;

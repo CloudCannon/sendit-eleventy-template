@@ -34,6 +34,10 @@ fs.readFile('./site/_data/site.json', 'utf8', function(err, dataFile){
             const replacementString = dataFile.theme.anchor_color;
             replaced = replaced.replace(/\$color-anchor: .*/g, ('$color-anchor: ' + replacementString + ';'));
         } 
+        if (dataFile.theme.background_effects_color) {
+            const replacementString = dataFile.theme.background_effects_color;
+            replaced = replaced.replace(/\$color-background-effects: .*/g, ('$color-background-effects: ' + replacementString + ';'));
+        } 
 
         // Write result back to variables.scss
         fs.writeFile('./component-library/shared/styles/variables.scss', replaced, 'utf-8', function (err) {
