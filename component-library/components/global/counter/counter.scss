@@ -60,6 +60,7 @@
    }
    &-content {
       position: relative;
+      height: 100%;
       @include media-breakpoint-down-lg {
          &:nth-child(2),
          &:nth-child(4) {

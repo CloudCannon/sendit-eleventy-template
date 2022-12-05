@@ -122,9 +122,10 @@
             top: 10px;
             z-index: -1;
             left: 10%;
-            img {
-               visibility: hidden;
-            }
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            width: 35%;
+            height: 100%;
          }
       }
       &-body {

@@ -24,10 +24,8 @@
     top: 0;
     left: 0;
     z-index: -1;
-
-    img {
-      visibility: hidden;
-    }
+    width: 384px;
+    height: 671px;
   }
   &-content {
     margin-top: 3rem;
@@ -72,6 +70,10 @@
     text-align: right;
     max-width: 100%;
     margin-right: -13px;
+    padding-right: $base-padding * 18;
+    @include media-breakpoint-down-xxxl {
+      padding-right: initial;
+    }
     img {
       border-radius: 0px;
     }
@@ -79,16 +81,21 @@
       -webkit-mask-image: url(/images/hero/hero-three-shape.png);
       mask-image: url(/images/hero/hero-three-shape.png);
       background: $color-primary;
+      width: 904px;
+      height: 1016px;
       position: absolute;
       top: -26%;
-      left: 3%;
+      right: 18rem;
       z-index: -1;
+      @media screen and (max-width: 2055px){
+        right: -3%;
+      }
+      @include media-breakpoint-down-xxl {
+        right: -3%;
+      }
       @include media-breakpoint-down-lg {
         top: -27%;
-        left: -22%;
-      }
-      img {
-        visibility: hidden;
+        left: 7%;
       }
     }
   }

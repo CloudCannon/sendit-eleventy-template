@@ -22,12 +22,12 @@
          left: 0;
          opacity: 0.2;
       }
-      .effect-one,
-      .effect-two {
-         img {
-            @include media-breakpoint-down-md {
-               width: 70%;
-            }
+      .effect-one, .effect-two {
+         @include media-breakpoint-down-md {
+            mask-size: 70%;
+            -webkit-mask-size: 70%;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
          }
       }
       .effect-one {
@@ -38,6 +38,8 @@
          top: 54%;
          left: -89px;
          z-index: -1;
+         width: 669px;
+         height: 339px;
          @include media-breakpoint-down-xl {
             top: 37%;
          }
@@ -46,9 +48,6 @@
          }
          @include media-breakpoint-down-md {
             top: 40%;
-         }
-         img {
-            visibility: hidden;
          }
       }
 
@@ -60,14 +59,13 @@
          top: -96px;
          right: -80px;
          z-index: -1;
+         width: 583px;
+         height: 398px;
          @include media-breakpoint-down-lg {
             top: -70px;
          }
          @include media-breakpoint-down-md {
             right: -234px;
-         }
-         img {
-            visibility: hidden;
          }
       }
    }

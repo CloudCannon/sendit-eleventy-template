@@ -62,14 +62,19 @@
          position: absolute;
          top: -96px;
          left: -89px;
-         z-index: -1;
+         z-index: -1;    
+         mask-repeat: no-repeat;
+         -webkit-mask-repeat: no-repeat;
+         mask-size: contain;
+         -webkit-mask-size: contain;     
+         width: 125%;
+         height: 125%;
          @include media-breakpoint-down-xxl {
-            img {
-               max-width: 100%;
-            }
+            width: 120%;
+            height: 120%;
          }
-         img {
-            visibility: hidden;
+         @include media-breakpoint-down-sm {
+            top: -75px;
          }
       }
       .video {

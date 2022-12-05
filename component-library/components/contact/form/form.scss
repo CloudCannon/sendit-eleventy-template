@@ -111,10 +111,12 @@
       top: -10%;
       left: -14%;
       z-index: -1;
-      img {
-        max-width: 100%;
-        visibility: hidden;
-      }
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      width: 115%;
+      height: 100%;
     }
   }
 }
