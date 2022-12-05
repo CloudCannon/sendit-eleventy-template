@@ -166,18 +166,14 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mx-auto mb-20 mb-lg-0">
                      {% for item in nav.items %}
-                     {% if item.link == "/" %}
                         {% assign url = item.link %}
-                     {% else %}
-                        {% assign url = item.link | append: "/" %}
-                     {% endif %}
-                     <li class="nav-item">
-                        <a
-                           class="nav-link {% if page.url == url%}active{% endif %}"
-                           href="{{ item.link }}"
-                           >{{ item.text }}</a
-                        >
-                     </li>
+                        <li class="nav-item">
+                           <a
+                              class="nav-link {% if page.url == url%}active{% endif %}"
+                              href="{{ item.link }}"
+                              >{{ item.text }}</a
+                           >
+                        </li>
                      {% endfor %}
                   </ul>
                </div>
