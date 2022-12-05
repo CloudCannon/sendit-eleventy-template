@@ -1,0 +1,14 @@
+{
+  "ssg": "eleventy",
+  "build_configuration": {
+    "preserved_paths": "",
+    "environment_variables": [],
+    "config": "",
+    "formats": "",
+    "input": "",
+    "output": "_site",
+    "pathprefix": "",
+    "quiet": false,
+    "manage_plugin_manually": false
+  }
+}
