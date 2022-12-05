@@ -1,6 +1,6 @@
 const fs = require('fs');
 // read theme color from _data/site.json
-fs.readFile('./site/_data/site.json', 'utf8', function(err, dataFile){
+fs.readFile('./site/_data/theme.json', 'utf8', function(err, dataFile){
     
     if(err){
         console.log(err);
@@ -22,20 +22,20 @@ fs.readFile('./site/_data/site.json', 'utf8', function(err, dataFile){
         var replaced = scssFile;
 
         // Change the variables to whatever was set in the data file
-        if (dataFile.theme.primary_color) {
-            const replacementString = dataFile.theme.primary_color;
+        if (dataFile.primary_color) {
+            const replacementString = dataFile.primary_color;
             replaced = replaced.replace(/\$color-primary: .*/g, ('$color-primary: ' + replacementString + ';'));
         } 
-        if (dataFile.theme.secondary_color) {
-            const replacementString = dataFile.theme.secondary_color;
+        if (dataFile.secondary_color) {
+            const replacementString = dataFile.secondary_color;
             replaced = replaced.replace(/\$color-secondary: .*/g, ('$color-secondary: ' + replacementString + ';'));
         }         
-        if (dataFile.theme.anchor_color) {
-            const replacementString = dataFile.theme.anchor_color;
+        if (dataFile.anchor_color) {
+            const replacementString = dataFile.anchor_color;
             replaced = replaced.replace(/\$color-anchor: .*/g, ('$color-anchor: ' + replacementString + ';'));
         } 
-        if (dataFile.theme.background_effects_color) {
-            const replacementString = dataFile.theme.background_effects_color;
+        if (dataFile.background_effects_color) {
+            const replacementString = dataFile.background_effects_color;
             replaced = replaced.replace(/\$color-background-effects: .*/g, ('$color-background-effects: ' + replacementString + ';'));
         } 
 

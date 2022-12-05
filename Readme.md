@@ -45,6 +45,6 @@ Sendit is set up for adding, updating and removing pages, components, posts, nav
 
 ### Theme colors
 
-* Theme colors can be set in *Data* / *Site* / *theme*
+* Theme colors can be set in *Data* / *Theme*
 * The main colors are set and variants of them are computed
 * The colors will update on the next build
