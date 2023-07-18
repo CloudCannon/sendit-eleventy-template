@@ -20,4 +20,3 @@ featuredImg:
   image:
   image_alt:
 ---
-![](/images/_screenshot.png)
