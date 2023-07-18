@@ -20,7 +20,9 @@
                            </li>
                            {% if content != "" %}
                               <li class="list-inline-item">
+                               {% if content %}
                                  <p>{{ content | wordCount }}<span> words</span></p>
+                               {% endif %}
                               </li>
                            {% endif %}
                         </ul>
