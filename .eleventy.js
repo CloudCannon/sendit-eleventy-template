@@ -1,7 +1,7 @@
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const { DateTime } = require("luxon");
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
-const { wordCount } = require("eleventy-plugin-wordcount");
+const { wordCountCallback } = require("./site/js/wordCount");
 const MarkdownIt = require("markdown-it"),
   md = new MarkdownIt({
     html: true,
@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(emojiReadTime, {
     showEmoji: false,
   });
-  eleventyConfig.addPlugin(wordCount);
+  eleventyConfig.addFilter("wordCount", wordCountCallback);
   eleventyConfig.addFilter("markdownify", (markdown) => md.render(markdown));
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.htmlTemplateEngine = "liquid";

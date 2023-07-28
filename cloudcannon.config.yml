@@ -76,3 +76,5 @@ _inputs:
   eleventyExcludeFromCollections:
     hidden: true
   
+paths:
+  uploads: images
