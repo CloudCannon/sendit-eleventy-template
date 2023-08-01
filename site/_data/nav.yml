@@ -2,8 +2,12 @@ logo: /images/logo.svg
 items:
   - link: /
     text: Home
-    enable_dropdown: false
+    enable_dropdown: true
     dropdown:
+      - - dropdown_text: test dropdown
+          dropdown_link: /test
+        - dropdown_text: test2
+          dropdown_link: test2
   - link: /feature/
     text: Feature
     enable_dropdown: false
@@ -30,5 +34,3 @@ items:
     text: Contact
     enable_dropdown: false
     dropdown:
-
-
