@@ -23,7 +23,7 @@ $color-primary-dark: mix($color-primary, $color-white, 12%);
 $color-gray-light: mix($color-primary, $color-white, 2%);
 $color-gray-dark: mix($color-primary, $color-white, 6%);
 //overwritten by site.json -> theme -> secondary_color if set
-$color-secondary: #fffbf3; 
+$color-secondary: #fffbf3;
 $color-secondary-light: mix($color-primary, $color-white, 16%);
 $color-secondary-dark: #f7f8fa;
 //overwritten by site.json -> theme -> anchor_color if set
