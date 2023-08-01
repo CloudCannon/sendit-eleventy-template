@@ -31,11 +31,32 @@ function parseFrontMatter(content) {
 
 
 // Move file from source to destination
+// Get permalink from front matter
+function getPermalink(frontMatter) {
+    if (frontMatter.permalink) {
+        return frontMatter.permalink.replace(/\/$/, "");
+    }
+    return null;
+}
+
+// Move file from source to destination and update SYNC_PATHS
 async function moveFile(src, dest) {
     const content = await readFile(src, 'utf-8');
+    const frontMatter = parseFrontMatter(content);
+
+    const permalink = getPermalink(frontMatter);
+    if (permalink) {
+        if (process.env.SYNC_PATHS) {
+            process.env.SYNC_PATHS += `,${permalink}`;
+        } else {
+            process.env.SYNC_PATHS = permalink;
+        }
+    }
+    
     await writeFile(dest, content);
     await unlink(src);
 }
+
 
 async function moveDrafts() {
     fs.readdir(blogPath, async (err, files) => {
