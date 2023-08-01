@@ -3,15 +3,11 @@ items:
   - link: /
     text: Home
     enable_dropdown: true
-    dropdown:
-      - dropdown_text: test
-        dropdown_link: test
-      - dropdown_text: test2
-        dropdown_link: test2
+    dropdown: []
   - link: /feature/
     text: Feature
-    enable_dropdown: false
-    dropdown:
+    enable_dropdown: true
+    dropdown: []
   - link: /pricing/
     text: Pricing
     enable_dropdown: false
