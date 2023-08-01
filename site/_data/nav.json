@@ -1,0 +1,54 @@
+{
+    "logo": "/images/logo.svg",
+    "items": [
+      {
+        "link": "/",
+        "text": "Home",
+        "enable_dropdown": false,
+        "dropdown": []
+      },
+      {
+        "link": "/feature/",
+        "text": "Feature",
+        "enable_dropdown": false,
+        "dropdown": []
+      },
+      {
+        "link": "/pricing/",
+        "text": "Pricing",
+        "enable_dropdown": false,
+        "dropdown": []
+      },
+      {
+        "link": "/about/",
+        "text": "About",
+        "enable_dropdown": false,
+        "dropdown": []
+      },
+      {
+        "link": "/blog/",
+        "text": "Blog",
+        "enable_dropdown": true,
+        "dropdown": [
+          {
+            "dropdown_text": "Lastest Article",
+            "dropdown_link": "/blog/5-things-to-improve-you-email-templates/"
+          },
+          {
+            "dropdown_text": "Marketing",
+            "dropdown_link": "/tags/marketing/"
+          },
+          {
+            "dropdown_text": "Technology",
+            "dropdown_link": "/tags/technology/"
+          }
+        ]
+      },
+      {
+        "link": "/contact/",
+        "text": "Contact",
+        "enable_dropdown": false,
+        "dropdown": []
+      }
+    ]
+  }

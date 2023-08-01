@@ -2,16 +2,13 @@ const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const { DateTime } = require("luxon");
 const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime");
 const { wordCountCallback } = require("./site/js/wordCount");
-const yaml = require("js-yaml");
 const MarkdownIt = require("markdown-it"),
   md = new MarkdownIt({
     html: true,
   });
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents))
-	eleventyConfig.addDataExtension('yml', contents => yaml.load(contents))
-  
+
   eleventyConfig.addFilter("length", (input) => {
     return input.length;
   });
