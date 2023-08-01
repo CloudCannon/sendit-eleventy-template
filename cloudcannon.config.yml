@@ -84,6 +84,8 @@ _inputs:
   dropdown_text:
     type: text
     label: Name
+  logo:
+    type: image
   
   
   
