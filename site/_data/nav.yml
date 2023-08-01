@@ -1,0 +1,38 @@
+logo: "/images/logo.svg"
+items:
+  - link: "/"
+    text: Home
+    enable_dropdown: false
+    dropdown:
+  - link: "/feature/"
+    text: Feature
+    enable_dropdown: false
+    dropdown: 
+  - link: "/pricing/"
+    text: Pricing
+    enable_dropdown: false
+    dropdown: 
+  - link: "/about/"
+    text: About
+    enable_dropdown: true
+    dropdown:
+      - link: "/"
+        text: dropdown 1
+      - link: "/"
+        text: dropdown 2
+      - link: "/"
+        text: dropdown 3
+  - link: "/blog/"
+    text: Blog
+    enable_dropdown: false
+    dropdown: 
+  - link: "/contact/"
+    text: Contact
+    enable_dropdown: false
+    dropdown: 
+button:
+  link: "/signup"
+  text: Get Started
+_inputs:
+  logo:
+    type: image
