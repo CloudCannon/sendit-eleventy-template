@@ -14,6 +14,9 @@ collections_config:
       - content
       - visual
 
+_structures:
+  content_blocks:
+    style: modal
 
 _inputs:
   date:
