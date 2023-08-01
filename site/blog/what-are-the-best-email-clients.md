@@ -1,6 +1,7 @@
 ---
 date: 2022-03-07
 title: What are the best email clients?
+permalink: /blog/{{ title | slugify }}/
 layout: layouts/blog-single.liquid
 tags:
   - marketing

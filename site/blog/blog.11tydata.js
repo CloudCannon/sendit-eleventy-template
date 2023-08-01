@@ -18,6 +18,16 @@ module.exports = {
 				return true;
 			}
 		},
-		
+		permalink: function(data) {
+			if (showDraft(data)) {
+				if (data.permalink) {
+					return data.permalink;
+				} else {
+					return "/blog/{{ title | slugify }}/";
+				}
+			} else {
+				return false;
+			}
+		}
 	}
 };

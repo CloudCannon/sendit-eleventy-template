@@ -1,6 +1,7 @@
 ---
 date: 2022-04-14
 title: 7 things you didn't know about email
+permalink: /blog/{{ title | slugify }}/
 layout: layouts/blog-single.liquid
 tags:
   - marketing

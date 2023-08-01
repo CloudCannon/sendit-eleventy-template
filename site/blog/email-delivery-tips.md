@@ -1,6 +1,7 @@
 ---
 date: 2022-03-07
 title: Email delivery tips
+permalink: /blog/{{ title | slugify }}/
 layout: layouts/blog-single.liquid
 tags:
   - email

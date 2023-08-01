@@ -24,6 +24,8 @@ _structures:
         dropdown_link:
 
 _inputs:
+  permalink:
+    hidden: true
   date:
     instance_value: now
   title_suffix:

@@ -1,6 +1,7 @@
 ---
 date: 
 title: 
+permalink: /blog/{{title | slugify }}
 seo:
   page_description: 
   canonical_url: 

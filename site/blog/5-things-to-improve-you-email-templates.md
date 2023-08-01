@@ -2,6 +2,7 @@
 _schema: default
 date: 2022-03-07T00:00:00Z
 title: 5 things to improve you email templates
+permalink: /blog/{{ title | slugify }}/
 seo:
   page_description:
   canonical_url:
