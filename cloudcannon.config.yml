@@ -77,6 +77,13 @@ _inputs:
   dropdown:
     type: array
     label: Dropdown Items
+    hidden: "!enable_dropdown"
+  dropdown_link:
+    type: link
+    label: Link
+  dropdown_text:
+    type: text
+    label: Name
   
   
   
