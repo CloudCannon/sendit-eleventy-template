@@ -81,12 +81,12 @@
                      </svg>
                   </span>
                </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mx-auto mb-20 mb-lg-0">
                      {% for item in nav.items %}
                      {% assign url = item.link %}
                      <li class="nav-item dropdown">
-                        {% if item.enable_dropdown %}
+                        {% if item.enable_dropdown and item.dropdown and item.dropdown.dropdown_items %}
                            <a
                            class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
                            href="{{ item.link }}"
@@ -95,9 +95,9 @@
                            aria-expanded="false"
                            >{{ item.text }}</a>
                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           {% for item in item.dropdown.dropdown_items %}
+                           {% for dropdown_item in item.dropdown.dropdown_items %}
                            <li>
-                              <a class="dropdown-item" href="{{ item.dropdown_link }}">{{ item.dropdown_text }}</a>
+                              <a class="dropdown-item" href="{{ dropdown_item.dropdown_link }}">{{ dropdown_item.dropdown_text }}</a>
                            </li>
                            {% endfor %}
                            </ul>
@@ -107,6 +107,6 @@
                      </li>
                      {% endfor %}
                   </ul>
-               </div> 
+               </div>  
          </nav>
 </header>

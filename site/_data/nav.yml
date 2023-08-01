@@ -3,18 +3,12 @@ items:
   - link: "/"
     text: Home
     enable_dropdown: false
-    dropdown:
-      dropdown_items:
   - link: "/feature/"
     text: Feature
     enable_dropdown: false
-    dropdown:
-      dropdown_items:
   - link: "/pricing/"
     text: Pricing
     enable_dropdown: false
-    dropdown:
-      dropdown_items:
   - link: "/about/"
     text: About
     enable_dropdown: true
@@ -29,13 +23,9 @@ items:
   - link: "/blog/"
     text: Blog
     enable_dropdown: false
-    dropdown:
-      dropdown_items:
   - link: "/contact/"
     text: Contact
     enable_dropdown: false
-    dropdown:
-      dropdown_items:
 button:
   link: "/signup"
   text: Get Started
