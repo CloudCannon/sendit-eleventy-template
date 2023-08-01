@@ -4,14 +4,20 @@ items:
     text: Home
     enable_dropdown: false
     dropdown:
+      - dropdown_link:
+        dropdown_text:
   - link: "/feature/"
     text: Feature
     enable_dropdown: false
-    dropdown: 
+    dropdown:
+      - dropdown_link:
+        dropdown_text:
   - link: "/pricing/"
     text: Pricing
     enable_dropdown: false
-    dropdown: 
+    dropdown:
+      - dropdown_link:
+        dropdown_text: 
   - link: "/about/"
     text: About
     enable_dropdown: true
@@ -25,11 +31,15 @@ items:
   - link: "/blog/"
     text: Blog
     enable_dropdown: false
-    dropdown: 
+    dropdown:
+      - dropdown_link:
+        dropdown_text: 
   - link: "/contact/"
     text: Contact
     enable_dropdown: false
-    dropdown: 
+    dropdown:
+      - dropdown_link:
+        dropdown_text:
 button:
   link: "/signup"
   text: Get Started
