@@ -71,12 +71,17 @@ _inputs:
   no_index:
     type: checkbox
     comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag
+  enable_dropdown:
+    type: switch
   dropdown:
     type: array
+    hidden: "!enable_dropdown"
   link: 
     type: text
+    hidden: "!enable_dropdown"
   text:
     type: text
+    hidden: "!enable_dropdown"
   
   
   layout:
