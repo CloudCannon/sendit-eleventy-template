@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: Best email sending services
-permalink: /blog/{{ title | slugify }}/
+post_permalink: /blog/{{ title | slugify }}/
 layout: layouts/blog-single.liquid
 tags:
   - technology

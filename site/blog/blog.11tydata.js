@@ -18,10 +18,10 @@ module.exports = {
 				return true;
 			}
 		},
-		permalink: function(data) {
+		post_permalink: function(data) {
 			if (showDraft(data)) {
-				if (data.permalink) {
-					return data.permalink;
+				if (data.post_permalink) {
+					return data.post_permalink;
 				} else {
 					return "/blog/{{ title | slugify }}/";
 				}

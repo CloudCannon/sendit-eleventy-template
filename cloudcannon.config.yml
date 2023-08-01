@@ -24,7 +24,7 @@ _structures:
         dropdown_link:
 
 _inputs:
-  permalink:
+  post_permalink:
     hidden: true
   date:
     instance_value: now

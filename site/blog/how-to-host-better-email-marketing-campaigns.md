@@ -1,7 +1,7 @@
 ---
 date: 2022-03-07
 title: How to host better email marketing campaigns?
-permalink: /blog/{{ title | slugify }}/
+post_permalink: /blog/{{ title | slugify }}/
 layout: layouts/blog-single.liquid
 tags:
   - marketing
