@@ -1,6 +1,6 @@
-logo: "/images/logo.svg"
+logo: /images/logo.svg
 items:
-  - link: "/"
+  - link: /
     text: Home
     enable_dropdown: false
     dropdown:
@@ -22,13 +22,13 @@ items:
     text: About
     enable_dropdown: true
     dropdown:
-      - dropdown_link: "/"
+      - dropdown_link: /
         dropdown_text: dropdown 1
-      - dropdown_link: "/"
+      - dropdown_link: /
         dropdown_text: dropdown 2
-      - dropdown_link: "/"
+      - dropdown_link: /
         dropdown_text: dropdown 3
-  - link: "/blog/"
+  - link: /blog/
     text: Blog
     enable_dropdown: false
     dropdown:
@@ -41,7 +41,7 @@ items:
       - dropdown_link:
         dropdown_text:
 button:
-  link: "/signup"
+  link: /signup
   text: Get Started
 _inputs:
   logo:
