@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
 npx @bookshop/generate
+
+node ./site/js/moveDrafts.js
