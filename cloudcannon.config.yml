@@ -95,7 +95,9 @@ _inputs:
     label: Name
   logo:
     type: image
-  
+  permalink:
+    type: text
+    commment: Prefix the url with a forward slash e.g. /blog/
   
   
   layout:
