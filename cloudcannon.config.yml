@@ -85,6 +85,9 @@ _inputs:
   dropdown:
     hidden: "!enable_dropdown"
     type: object
+  dropdown_items: 
+    type: object 
+    hidden: "!enable_dropdown"
   dropdown_link: 
     type: text
     label: Link
