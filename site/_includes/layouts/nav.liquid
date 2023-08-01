@@ -86,7 +86,7 @@
                      {% for item in nav.items %}
                      {% assign url = item.link %}
                      <li class="nav-item dropdown">
-                        {% if item.dropdown %}
+                        {% if item.enable_dropdown %}
                            <a
                            class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
                            href="{{ item.link }}"
