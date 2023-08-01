@@ -29,7 +29,7 @@ items:
     enable_dropdown: true
     dropdown:
       - dropdown_text: Lastest Article
-        dropdown_link: blog/5-things-to-improve-you-email-templates/
+        dropdown_link: 5-things-to-improve-you-email-templates/
   - link: /contact/
     text: Contact
     enable_dropdown: false
