@@ -21,11 +21,13 @@
     },
     {
       "link": "/feature/",
-      "text": "Feature"
+      "text": "Feature",
+      "dropdown": []
     },
     {
       "link": "/pricing/",
-      "text": "Pricing"
+      "text": "Pricing",
+      "dropdown": []
     },
     {
       "link": "/about/",
@@ -47,11 +49,13 @@
     },
     {
       "link": "/blog/",
-      "text": "Blog"
+      "text": "Blog",
+      "dropdown": []
     },
     {
       "link": "/contact/",
-      "text": "Contact"
+      "text": "Contact",
+      "dropdown": []
     }
   ],
   "button": {
