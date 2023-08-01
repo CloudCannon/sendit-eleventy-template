@@ -1,32 +1,34 @@
-logo: "/images/logo.svg"
+logo: /images/logo.svg
 items:
-  - link: "/"
+  - link: /
     text: Home
     enable_dropdown: false
-  - link: "/feature/"
+  - link: /feature/
     text: Feature
     enable_dropdown: false
-  - link: "/pricing/"
+  - link: /pricing/
     text: Pricing
     enable_dropdown: false
-  - link: "/about/"
+  - link: /about/
     text: About
     enable_dropdown: true
     dropdown:
-      - dropdown_link: "/"
+      - dropdown_link: /
         dropdown_text: dropdown 1
-      - dropdown_link: "/"
+      - dropdown_link: /
         dropdown_text: dropdown 2
-      - dropdown_link: "/"
+      - dropdown_link: /
         dropdown_text: dropdown 3
-  - link: "/blog/"
+      - dropdown_link: test
+        dropdown_text: test
+  - link: /blog/
     text: Blog
     enable_dropdown: false
-  - link: "/contact/"
+  - link: /contact/
     text: Contact
     enable_dropdown: false
 button:
-  link: "/signup"
+  link: /signup
   text: Get Started
 _inputs:
   logo:
