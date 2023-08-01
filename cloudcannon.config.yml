@@ -20,8 +20,8 @@ _structures:
   dropdown: 
     values:
       value:
-        - dropdown_text:
-          dropdown_link:
+        dropdown_text:
+        dropdown_link:
 
 _inputs:
   date:
