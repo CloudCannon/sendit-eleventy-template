@@ -7,14 +7,6 @@
       "dropdown": [
         {
           "link": "/",
-          "text": "dropdown 1"
-        },
-        {
-          "link": "/",
-          "text": "dropdown 2"
-        },
-        {
-          "link": "/",
           "text": "dropdown 3"
         }
       ]
