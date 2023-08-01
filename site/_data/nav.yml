@@ -6,35 +6,35 @@ items:
     dropdown:
       - dropdown_text:
         dropdown_link:
-  - link: "/feature/"
+  - link: /feature/
     text: Feature
     enable_dropdown: false
     dropdown:
       - dropdown_text:
         dropdown_link:
-  - link: "/pricing/"
+  - link: /pricing/
     text: Pricing
     enable_dropdown: false
     dropdown:
       - dropdown_text:
         dropdown_link:
-  - link: "/about/"
+  - link: /about/
     text: About
-    enable_dropdown: true
+    enable_dropdown: false
     dropdown:
       - dropdown_text: dropdown 1
         dropdown_link: /
-      - dropdown_text: dropdown 2
-        dropdown_link: /
-      - dropdown_text: dropdown 3
-        dropdown_link: /
   - link: /blog/
     text: Blog
-    enable_dropdown: false
+    enable_dropdown: true
     dropdown:
-      - dropdown_text:
-        dropdown_link:
-  - link: "/contact/"
+      - dropdown_text: Lastest Article
+        dropdown_link: /blog/5-things-to-improve-you-email-templates/
+      - dropdown_text: Marketing
+        dropdown_link: /tags/marketing/
+      - dropdown_text: Technology
+        dropdown_link: /tags/technology/
+  - link: /contact/
     text: Contact
     enable_dropdown: false
     dropdown:
