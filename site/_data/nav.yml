@@ -43,6 +43,4 @@ items:
 button:
   link: /signup
   text: Get Started
-_inputs:
-  logo:
-    type: image
+
