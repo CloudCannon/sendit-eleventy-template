@@ -71,6 +71,14 @@ _inputs:
   no_index:
     type: checkbox
     comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag
+  dropdown:
+    type: array
+  link: 
+    type: text
+  text:
+    type: text
+  
+  
   layout:
     hidden: true
   eleventyExcludeFromCollections:
