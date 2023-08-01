@@ -74,20 +74,7 @@ _inputs:
     comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag
   enable_dropdown:
     type: switch
-  dropdown:
-    hidden: "!enable_dropdown"
-    type: object
-  dropdown_items: 
-    type: array
-    hidden: "!enable_dropdown"
-  dropdown_link: 
-    type: text
-    label: Link
-    hidden: "!enable_dropdown"
-  dropdown_text:
-    type: text
-    label: Name
-    hidden: "!enable_dropdown"
+  
   
   
   layout:
