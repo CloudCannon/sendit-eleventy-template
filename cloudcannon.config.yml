@@ -75,6 +75,12 @@ _inputs:
     comment: Defaults to the image set in the Site SEO data file
   open_graph_type:
     comment: Defaults to the type 'website'
+    type: select
+    options:
+      values: 
+        - website
+        - article
+        - profile
   author_twitter_handle:
     comment: Defaults to the twitter site value set in the Site SEO data file
   no_index:
@@ -98,6 +104,7 @@ _inputs:
   permalink:
     type: text
     commment: Prefix the url with a forward slash e.g. /blog/
+
   
   
   layout:
