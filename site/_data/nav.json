@@ -3,7 +3,21 @@
   "items": [
     {
       "link": "/",
-      "text": "Home"
+      "text": "Home",
+      "dropdown": [
+        {
+          "link": "/",
+          "text": "dropdown 1"
+        },
+        {
+          "link": "/",
+          "text": "dropdown 2"
+        },
+        {
+          "link": "/",
+          "text": "dropdown 3"
+        }
+      ]
     },
     {
       "link": "/feature/",
@@ -15,7 +29,21 @@
     },
     {
       "link": "/about/",
-      "text": "About"
+      "text": "About",
+      "dropdown": [
+        {
+          "link": "/",
+          "text": "dropdown 1"
+        },
+        {
+          "link": "/",
+          "text": "dropdown 2"
+        },
+        {
+          "link": "/",
+          "text": "dropdown 3"
+        }
+      ]
     },
     {
       "link": "/blog/",
