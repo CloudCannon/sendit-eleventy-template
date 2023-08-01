@@ -76,6 +76,9 @@ _inputs:
     type: switch
   dropdown:
     hidden: "!enable_dropdown"
+  dropdown_items:
+    hidden: "!enable_dropdown"
+    type: array
   dropdown_link: 
     type: text
     label: Link

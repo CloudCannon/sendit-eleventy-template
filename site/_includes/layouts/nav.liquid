@@ -95,7 +95,7 @@
                            aria-expanded="false"
                            >{{ item.text }}</a>
                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           {% for item in item.dropdown %}
+                           {% for item in item.dropdown.dropdown_items %}
                            <li>
                               <a class="dropdown-item" href="{{ item.dropdown_link }}">{{ item.dropdown_text }}</a>
                            </li>
