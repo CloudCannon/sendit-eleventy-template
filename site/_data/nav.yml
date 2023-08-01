@@ -40,7 +40,5 @@ items:
     dropdown:
       - dropdown_text:
         dropdown_link:
-button:
-  link: /signup
-  text: Get Started
+
 
