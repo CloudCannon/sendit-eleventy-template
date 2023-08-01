@@ -86,7 +86,7 @@
                      {% for item in nav.items %}
                      {% assign url = item.link %}
                      <li class="nav-item dropdown">
-                        {% if item.enable_dropdown and item.dropdown and item.dropdown.dropdown_items %}
+                        {% if item.enable_dropdown and item.dropdown %}
                            <a
                            class="nav-link dropdown-link {% if page.url == url%}active{% endif %}"
                            href="{{ item.link }}"
@@ -95,7 +95,7 @@
                            aria-expanded="false"
                            >{{ item.text }}</a>
                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           {% for dropdown_item in item.dropdown.dropdown_items %}
+                           {% for dropdown_item in item.dropdown %}
                            <li>
                               <a class="dropdown-item" href="{{ dropdown_item.dropdown_link }}">{{ dropdown_item.dropdown_text }}</a>
                            </li>

@@ -14,6 +14,15 @@ collections_config:
       - content
       - visual
 
+_structures:
+  dropdown:
+    - label: dropdown items
+      icon: list 
+      value: 
+        - dropdown_text: 
+          dropdown_link:
+
+
 
 _inputs:
   date:
@@ -74,6 +83,9 @@ _inputs:
     comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag
   enable_dropdown:
     type: switch
+  dropdown:
+    type: array
+    options: _structures.dropdown
   
   
   

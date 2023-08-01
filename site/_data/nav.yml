@@ -13,13 +13,12 @@ items:
     text: About
     enable_dropdown: true
     dropdown:
-      dropdown_items:
-        - dropdown_link: "/"
-          dropdown_text: dropdown 1
-        - dropdown_link: "/"
-          dropdown_text: dropdown 2
-        - dropdown_link: "/"
-          dropdown_text: dropdown 3
+      - dropdown_link: "/"
+        dropdown_text: dropdown 1
+      - dropdown_link: "/"
+        dropdown_text: dropdown 2
+      - dropdown_link: "/"
+        dropdown_text: dropdown 3
   - link: "/blog/"
     text: Blog
     enable_dropdown: false
