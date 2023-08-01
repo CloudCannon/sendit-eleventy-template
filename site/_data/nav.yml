@@ -4,6 +4,8 @@ items:
     text: Home
     enable_dropdown: true
     dropdown:
+      - - dropdown_text: dropdown1
+          dropdown_link: dropdown
   - link: /feature/
     text: Feature
     enable_dropdown: false
