@@ -26,10 +26,10 @@ items:
         dropdown_link: /
   - link: /blog/
     text: Blog
-    enable_dropdown: false
+    enable_dropdown: true
     dropdown:
-      - dropdown_text:
-        dropdown_link:
+      - dropdown_text: Lastest Article
+        dropdown_link: blog/5-things-to-improve-you-email-templates/
   - link: /contact/
     text: Contact
     enable_dropdown: false
