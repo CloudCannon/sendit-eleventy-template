@@ -14,15 +14,6 @@ collections_config:
       - content
       - visual
 
-_structures:
-  dropdown:
-    values:
-      - label: Dropdown
-        icon: menu
-        value:
-          dropdown_text:
-          dropdown_link:
-
 
 _inputs:
   date:
@@ -84,7 +75,6 @@ _inputs:
   enable_dropdown:
     type: switch
   dropdown:
-    type: array
     hidden: "!enable_dropdown"
   dropdown_link: 
     type: text
