@@ -2,11 +2,11 @@ logo: /images/logo.svg
 items:
   - link: /
     text: Home
-    enable_dropdown: true
+    enable_dropdown: false
     dropdown: []
   - link: /feature/
     text: Feature
-    enable_dropdown: true
+    enable_dropdown: false
     dropdown: []
   - link: /pricing/
     text: Pricing
