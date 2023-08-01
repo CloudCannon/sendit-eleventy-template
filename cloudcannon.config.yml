@@ -84,7 +84,7 @@ _inputs:
     type: switch
   dropdown:
     hidden: "!enable_dropdown"
-    type: array
+    type: object
   dropdown_link: 
     type: text
     label: Link
