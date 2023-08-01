@@ -76,11 +76,13 @@ _inputs:
   dropdown:
     type: array
     hidden: "!enable_dropdown"
-  link: 
+  dropdown_link: 
     type: text
+    label: Link
     hidden: "!enable_dropdown"
-  text:
+  dropdown_text:
     type: text
+    label: Text
     hidden: "!enable_dropdown"
   
   
