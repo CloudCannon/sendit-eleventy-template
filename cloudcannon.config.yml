@@ -17,6 +17,11 @@ collections_config:
 _structures:
   content_blocks:
     style: modal
+  dropdown: 
+    values:
+      value:
+        - dropdown_text:
+          dropdown_link:
 
 _inputs:
   date:
@@ -79,6 +84,7 @@ _inputs:
     type: switch
   dropdown:
     type: array
+    options: _structures.dropdown
     label: Dropdown Items
     hidden: "!enable_dropdown"
   dropdown_link:
