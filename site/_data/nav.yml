@@ -19,8 +19,6 @@ items:
         dropdown_text: dropdown 2
       - dropdown_link: /
         dropdown_text: dropdown 3
-      - dropdown_link: test
-        dropdown_text: test
   - link: /blog/
     text: Blog
     enable_dropdown: false
