@@ -1,5 +1,8 @@
 collections_config:
   pages:
+    icon: feed
+    disable_add_folder: true
+    output: true
     schemas:
       page:
         path: site/schemas/page.html
@@ -7,12 +10,66 @@ collections_config:
       - visual
   blog:
     path: 'blog'
+    icon: article
+    disable_add_folder: true
+    output: true
     schemas:
       default:
         path: site/schemas/post.md
     _enabled_editors:
       - content
       - visual
+  meta_data: 
+    output: true
+    path: data
+    icon: settings
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
+    filter:
+      exlude: 
+        - nav.json
+        - footer.json
+        - theme.json
+  site_navigation:
+    output: true
+    path: data
+    icon: table_rows
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
+    filter:
+      base: strict
+      include: 
+        - nav.json
+        - footer.json
+  theme_palette:
+    output: true
+    path: data
+    disable_add: true
+    disable_add_folder: true
+    icon: color_lens
+    _enabled_editors:
+      - data
+    filter:
+      base: strict
+      include: 
+        - theme.json
+
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+  - heading: Blogging
+    collections:
+      - blog
+  - heading: Site Settings
+    collections:
+      - meta_data
+      - theme_palette
+      - site_navigation
 
 
 _structures:
