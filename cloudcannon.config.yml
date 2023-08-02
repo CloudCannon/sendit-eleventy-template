@@ -12,7 +12,7 @@ collections_config:
         path: site/schemas/post.md
     _enabled_editors:
       - content
-      - visual
+
 
 _structures:
   content_blocks:
