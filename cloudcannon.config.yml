@@ -1,3 +1,5 @@
+source: site
+collections_config_override: true
 collections_config:
   pages:
     icon: feed
