@@ -177,3 +177,5 @@ paths:
   uploads: images
   data: data
   collections: content
+  includes: layouts
+  layouts: layouts
