@@ -41,7 +41,7 @@ collections_config:
     _enabled_editors:
       - data
     filter:
-      base: strict
+      base: none
       include: 
         - nav.json
         - footer.json
@@ -54,7 +54,7 @@ collections_config:
     _enabled_editors:
       - data
     filter:
-      base: strict
+      base: none
       include: 
         - theme.json
 
