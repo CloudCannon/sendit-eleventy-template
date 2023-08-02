@@ -24,7 +24,7 @@ collections_config:
       - visual
   meta_data: 
     output: true
-    path: data
+    path: _data
     icon: settings
     disable_add: true
     disable_add_folder: true
@@ -37,7 +37,7 @@ collections_config:
         - theme.json
   site_navigation:
     output: true
-    path: data
+    path: _data
     icon: table_rows
     disable_add: true
     disable_add_folder: true
@@ -50,7 +50,7 @@ collections_config:
         - footer.json
   theme_palette:
     output: true
-    path: data
+    path: _data
     disable_add: true
     disable_add_folder: true
     icon: color_lens
@@ -175,7 +175,7 @@ _inputs:
   
 paths:
   uploads: images
-  data: data
+  data: _data
   collections: content
   includes: layouts
   layouts: layouts
