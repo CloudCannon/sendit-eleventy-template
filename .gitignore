@@ -4,3 +4,4 @@ _site
 */.DS_Store
 */*/.DS_Store
 site/css/*
+.vscode
