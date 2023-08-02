@@ -5,14 +5,14 @@ collections_config:
     icon: feed
     disable_add_folder: true
     output: true
-    path: 'pages'
+    path: pages
     schemas:
       page:
         path: site/schemas/page.html
     _enabled_editors:
       - visual
   blog:
-    path: 'blog'
+    path: blog
     icon: article
     disable_add_folder: true
     output: true
@@ -24,7 +24,7 @@ collections_config:
       - visual
   meta_data: 
     output: true
-    path: 'data'
+    path: data
     icon: settings
     disable_add: true
     disable_add_folder: true
@@ -37,7 +37,7 @@ collections_config:
         - theme.json
   site_navigation:
     output: true
-    path: 'data'
+    path: data
     icon: table_rows
     disable_add: true
     disable_add_folder: true
@@ -50,7 +50,7 @@ collections_config:
         - footer.json
   theme_palette:
     output: true
-    path: 'data'
+    path: data
     disable_add: true
     disable_add_folder: true
     icon: color_lens
