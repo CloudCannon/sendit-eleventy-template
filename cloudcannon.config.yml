@@ -28,7 +28,7 @@ collections_config:
     _enabled_editors:
       - data
     filter:
-      exlude: 
+      exclude: 
         - nav.json
         - footer.json
         - theme.json
