@@ -11,6 +11,11 @@ collections_config:
     schemas:
       page:
         path: site/schemas/page.html
+    preview:
+      metadata: 
+        - icon: newspaper
+          text: 
+            - key: tags
     _enabled_editors:
       - visual
   blog:
