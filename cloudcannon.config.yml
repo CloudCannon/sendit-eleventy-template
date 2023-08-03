@@ -1,5 +1,7 @@
 source: site
 collections_config_override: true
+data_config:
+  blog-tags: true
 collections_config:
   pages:
     icon: feed
@@ -100,8 +102,6 @@ _structures:
         link:
         text: 
 
-data_config:
-  blog_tags: true
 
 _inputs:
   post_permalink:
@@ -196,7 +196,8 @@ _inputs:
     comment: Prefix the url with a forward slash e.g. /blog/
   tags:
     type: multiselect
-    options: _data.blog_tags
+    options: 
+      values: data.blog-tags
 
   layout:
     hidden: true
