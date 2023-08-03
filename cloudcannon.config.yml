@@ -83,7 +83,12 @@ _structures:
       value:
         dropdown_text:
         dropdown_link:
-
+  social:
+    values:
+      value:
+        link: 
+        icon: 
+        icon_alt:
 _inputs:
   post_permalink:
     hidden: true
@@ -99,6 +104,7 @@ _inputs:
     type: number
   social:
     options:
+      structures: _structures.social 
       preview:
         icon: link
   links:
