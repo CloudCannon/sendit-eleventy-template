@@ -26,6 +26,11 @@
       "link": "https://www.youtube.com/",
       "icon": "ph-youtube-logo",
       "icon_alt": "YouTube"
+    },
+    {
+      "link": "test",
+      "icon": "ph-github-logo",
+      "icon_alt": "test"
     }
   ],
   "sections": [
