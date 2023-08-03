@@ -133,8 +133,8 @@ _inputs:
         icon: link
   sections:
     options:
+      structures: _structures.sections
       preview:
-        structures: _structures.sections
         icon: link
   items:
     options:
@@ -185,7 +185,8 @@ _inputs:
     type: switch
   dropdown:
     type: array
-    options: _structures.dropdown
+    options: 
+      structures: _structures.dropdown
     label: Dropdown Items
     hidden: "!enable_dropdown"
   dropdown_link:
