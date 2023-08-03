@@ -96,10 +96,9 @@ _structures:
         links:  
   links:
     values:
-      values:
-        values:
-          link:
-          text: 
+      value:
+        link:
+        text: 
 
 _inputs:
   post_permalink:
