@@ -99,7 +99,7 @@ _structures:
       value:
         link:
         text: 
-        
+
 data_config:
   blog_tags: true
 
@@ -196,7 +196,7 @@ _inputs:
     comment: Prefix the url with a forward slash e.g. /blog/
   tags:
     type: multiselect
-    options: data.blog_tags
+    options: _data.blog_tags
 
   layout:
     hidden: true
