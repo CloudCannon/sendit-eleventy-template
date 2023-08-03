@@ -4,8 +4,13 @@
     {
       "link": "/",
       "text": "Home",
-      "enable_dropdown": false,
-      "dropdown": []
+      "enable_dropdown": true,
+      "dropdown": [
+        {
+          "dropdown_text": "test",
+          "dropdown_link": "/login/"
+        }
+      ]
     },
     {
       "link": "/feature/",
