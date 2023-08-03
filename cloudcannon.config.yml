@@ -89,13 +89,8 @@ _structures:
         link: 
         icon: 
         icon_alt:
-  sections:
-    values:
-      value:
-        title:
-        links:  
-
-
+  
+  
 _inputs:
   post_permalink:
     hidden: true
@@ -117,11 +112,6 @@ _inputs:
   links:
     options:
       preview:
-        icon: link
-  sections:
-    options:
-      preview:
-        structures: _structures.sections
         icon: link
   items:
     options:
