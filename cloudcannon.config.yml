@@ -180,7 +180,7 @@ _inputs:
     cascade: true
   page_description:
     type: text
-    comment: Defaults to the description set in the Site SEO data file
+    comment: If empty, defaults to the description set in the Site SEO data file 
     cascade: true
   favicon_icon:
     type: image
@@ -192,7 +192,7 @@ _inputs:
     cascade: true
   canonical_url:
     type: text
-    comment: Defaults to the pages url
+    comment: If empty, defaults to the page URL
     cascade: true
   featured_image:
     type: text
@@ -206,7 +206,6 @@ _inputs:
         - website
         - article
         - profile
-    comment: Defaults to the type 'website'
     cascade: true
   author_twitter_handle:
     type: twitter
