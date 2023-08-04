@@ -1,73 +1,98 @@
 source: site
-collections_config_override: true
-data_config:
-  blog-tags: true
+paths:
+  uploads: images
+  collections: content
+  data: _data
+  layouts: layouts
+  includes: layouts
 collections_config:
   pages:
-    icon: feed
-    disable_add_folder: true
-    output: true
     path: pages
+    output: true
+    icon: feed
+    _enabled_editors:
+      - visual
+    disable_add: false
+    disable_add_folder: true
+    disable_file_actions: false
     schemas:
       page:
         path: site/schemas/page.html
-    _enabled_editors:
-      - visual
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+    schema_key: _schema
   blog:
     path: blog
-    icon: article
-    disable_add_folder: true
     output: true
-    schemas:
-      default:
-        path: site/schemas/post.md
+    icon: article
     preview:
-      metadata: 
-        - icon: newspaper
-          text: 
+      metadata:
+        - text:
             - key: tags
+          icon: newspaper
     _enabled_editors:
       - content
       - visual
-  meta_data: 
-    output: true
-    path: _data
-    icon: settings
-    disable_add: true
+    disable_add: false
     disable_add_folder: true
-    _enabled_editors:
-      - data
+    disable_file_actions: false
+    schemas:
+      default:
+        path: site/schemas/post.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+    schema_key: _schema
+  meta_data:
+    path: _data
+    output: true
     filter:
-      exclude: 
+      exclude:
         - nav.json
         - footer.json
         - theme.json
-  site_navigation:
-    output: true
-    path: _data
-    icon: table_rows
-    disable_add: true
-    disable_add_folder: true
+    icon: settings
     _enabled_editors:
       - data
-    filter:
-      base: none
-      include: 
-        - nav.json
-        - footer.json
-  theme_palette:
-    output: true
-    path: _data
     disable_add: true
     disable_add_folder: true
+    disable_file_actions: false
+    schema_key: _schema
+  site_navigation:
+    path: _data
+    output: true
+    filter:
+      base: none
+      include:
+        - nav.json
+        - footer.json
+    icon: table_rows
+    _enabled_editors:
+      - data
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: false
+    schema_key: _schema
+  theme_palette:
+    path: _data
+    output: true
+    filter:
+      base: none
+      include:
+        - theme.json
     icon: color_lens
     _enabled_editors:
       - data
-    filter:
-      base: none
-      include: 
-        - theme.json
-
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: false
+    schema_key: _schema
+collections_config_override: true
 collection_groups:
   - heading: Pages
     collections:
@@ -80,139 +105,198 @@ collection_groups:
       - meta_data
       - theme_palette
       - site_navigation
-
-
-_structures:
-  content_blocks:
-    style: modal
-  dropdown: 
-    values:
-      value:
-        dropdown_text:
-        dropdown_link:
-  social:
-    values:
-      value:
-        link: 
-        icon: 
-        icon_alt:
-  sections:
-    values:
-      value:
-        title:
-        links:  
-  links:
-    values:
-      value:
-        link:
-        text: 
-
-
 _inputs:
   post_permalink:
+    type: text
     hidden: true
+    cascade: true
   date:
+    type: text
     instance_value: now
+    cascade: true
   title_suffix:
+    type: text
     comment: Added at the end of the title and highlighted in a different color
+    cascade: true
   pagination.data:
+    type: text
     hidden: true
+    cascade: true
   pagination.alias:
+    type: text
     hidden: true
+    cascade: true
   pagination.size:
     type: number
+    cascade: true
   social:
+    type: text
     options:
-      structures: _structures.social 
+      structures: _structures.social
       preview:
         icon: link
+    cascade: true
   links:
+    type: text
     options:
       structures: _structures.links
       preview:
         icon: link
+    cascade: true
   sections:
+    type: text
     options:
       structures: _structures.sections
       preview:
         icon: link
+    cascade: true
   items:
+    type: text
     options:
       preview:
         icon: link
+    cascade: true
   social[*].icon:
     type: select
     options:
+      allow_empty: true
       values:
         - ph-facebook-logo
         - ph-instagram-logo
         - ph-twitter-logo
         - ph-github-logo
         - ph-youtube-logo
+    cascade: true
   logo_url:
+    type: text
     comment: Link for the logo in the top left of the footer
+    cascade: true
   copyright:
+    type: text
     comment: Automatically prefixed with the current year
+    cascade: true
   isActive:
     type: switch
+    cascade: true
   page_description:
+    type: text
     comment: Defaults to the description set in the Site SEO data file
+    cascade: true
   favicon_icon:
     type: image
     comment: For the shortcut icon meta tag
+    cascade: true
   faivcon_image:
     type: image
     comment: For the icon meta tag
+    cascade: true
   canonical_url:
+    type: text
     comment: Defaults to the pages url
+    cascade: true
   featured_image:
+    type: text
     comment: Defaults to the image set in the Site SEO data file
+    cascade: true
   open_graph_type:
-    comment: Defaults to the type 'website'
     type: select
     options:
-      values: 
+      allow_empty: true
+      values:
         - website
         - article
         - profile
+    comment: Defaults to the type 'website'
+    cascade: true
   author_twitter_handle:
     type: twitter
     comment: Defaults to the twitter site value set in the Site SEO data file
+    cascade: true
   no_index:
     type: checkbox
-    comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag
+    comment: >-
+      When selected this removes the page from your sitemap and adds the noindex
+      robots meta tag
+    cascade: true
   enable_dropdown:
     type: switch
+    cascade: true
   dropdown:
     type: array
-    options: 
+    options:
       structures: _structures.dropdown
     label: Dropdown Items
-    hidden: "!enable_dropdown"
+    hidden: '!enable_dropdown'
+    cascade: true
   dropdown_link:
     type: url
     label: Link
+    cascade: true
   dropdown_text:
     type: text
     label: Name
+    cascade: true
   logo:
     type: image
+    cascade: true
   permalink:
     type: text
     comment: Prefix the url with a forward slash e.g. /blog/
+    cascade: true
   tags:
     type: multiselect
-    options: 
+    options:
+      empty_type: array
       values: data.blog-tags
-
+    cascade: true
   layout:
+    type: text
     hidden: true
+    cascade: true
   eleventyExcludeFromCollections:
+    type: text
     hidden: true
-  
-paths:
-  uploads: images
-  data: _data
-  collections: content
-  includes: layouts
-  layouts: layouts
+    cascade: true
+  twitter_site:
+    type: twitter
+    options: {}
+    label: Twitter Username
+    cascade: true
+_select_data: {}
+_structures:
+  content_blocks:
+    style: modal
+    id_key: _type
+  dropdown:
+    style: select
+    id_key: _type
+    values:
+      value:
+        dropdown_text:
+        dropdown_link:
+  social:
+    style: select
+    id_key: _type
+    values:
+      value:
+        link:
+        icon:
+        icon_alt:
+  sections:
+    style: select
+    id_key: _type
+    values:
+      value:
+        title:
+        links:
+  links:
+    style: select
+    id_key: _type
+    values:
+      value:
+        link:
+        text:
+_editables: {}
+data_config:
+  blog-tags: true
+timezone: Etc/UTC
