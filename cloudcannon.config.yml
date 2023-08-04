@@ -111,7 +111,7 @@ _inputs:
     hidden: true
     cascade: true
   date:
-    type: text
+    type: datetime
     instance_value: now
     cascade: true
   title_suffix:
