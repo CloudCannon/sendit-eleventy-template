@@ -175,7 +175,6 @@ _inputs:
         - article
         - profile
   author_twitter_handle:
-    hidden: '!author'
     type: twitter
     comment: Defaults to the twitter site value set in the Site SEO data file
   no_index:
