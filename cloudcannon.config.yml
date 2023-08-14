@@ -29,7 +29,7 @@ collections_config:
     _enabled_editors:
       - content
       - visual
-  meta_data: 
+  data: 
     output: true
     path: _data
     icon: settings
@@ -77,7 +77,7 @@ collection_groups:
       - blog
   - heading: Site Settings
     collections:
-      - meta_data
+      - data
       - theme_palette
       - site_navigation
 
