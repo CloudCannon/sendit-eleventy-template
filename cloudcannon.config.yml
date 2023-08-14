@@ -210,6 +210,10 @@ _inputs:
   twitter_site:
     type: twitter
     label: Twitter Username
+  enable_nav_btn:
+    type: switch
+  nav_btn:
+    hidden: "!enable_nav_btn"
   
 paths:
   uploads: images

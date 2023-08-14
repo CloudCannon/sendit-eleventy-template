@@ -107,6 +107,14 @@
                      </li>
                      {% endfor %}
                   </ul>
-               </div>  
+               </div> 
+               {% if nav.enable_nav_btn %}
+                <div class="d-none d-lg-block">
+                    <div class="nav-item">
+                    <a href="{{ nav.nav_btn.link }}" class="btn btn-sm btn-links">{{ nav.nav_btn.text}}</a>
+                    </div>
+                </div> 
+               {% endif %}
+            </div>
          </nav>
 </header>

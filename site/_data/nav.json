@@ -50,5 +50,10 @@
       "enable_dropdown": false,
       "dropdown": []
     }
-  ]
+  ],
+  "enable_nav_btn": true,
+  "nav_btn": {
+    "link": "/signup/",
+    "text": "Get Started"
+  }
 }
