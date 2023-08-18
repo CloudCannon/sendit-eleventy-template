@@ -214,7 +214,6 @@
 /********** 
  1. Default  Styles 
 **********/
-// @use 'sass:math';
 /*Font */
 body {
    font-family: $font-primary;
@@ -361,7 +360,6 @@ a {
 
    &-nav {
       display: block;
-      // margin-bottom: $base-padding * 12.5;
       background-color: none;
       .nav-pills {
          display: block;
@@ -14722,7 +14720,6 @@ a {
       padding: 1.5rem;
       border-radius: 0;
       width: 100%;
-      // width: calc(100% - 32px) !important;
       background: $color-white;
    }
 }
@@ -14760,7 +14757,6 @@ a {
       margin-top: $base-margin * 4.5 !important;
       justify-content: start;
       align-items: start;
-      // height: calc(100vh - 76px);
    }
    .nav-link {
       padding-right: $base-padding !important;
@@ -14937,11 +14933,8 @@ a {
             transform-origin: 0 0 0;
             height: auto;
             text-align: center;
-          //  background: $color-secondary-dark;
             width: calc(100% + 2rem);
-           // margin-left: -3rem;
             border-radius: 0;
-          //  margin-top: -60px;
          }
          &-toggle {
             &:after {
@@ -15294,7 +15287,6 @@ a {
    }
    // start block two section
    &-two {
-      // padding-bottom: $base-padding * 12.5;
       margin-top: 0;
       .section-header {
          padding-bottom: $base-padding * 3.5;
