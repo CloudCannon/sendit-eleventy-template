@@ -27,6 +27,21 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  title: One mission to make the better marketing
+  description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
+  hero_images:
+    - image: https://placehold.co/500
+      image_alt: People working
+      placement: front_bottom
+    - image: https://placehold.co/500
+      image_alt: Group of people looking at a computer
+      placement: back_top_right
+    - image: https://placehold.co/500
+      image_alt: Staff group photo
+      placement: back_top_lefts
+  button:
+    text: "See more"
+    link: "#counter-up"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

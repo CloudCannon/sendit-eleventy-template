@@ -19,6 +19,13 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  title: Email campaigns Features
+  description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
+  button:
+    link: /sign-up
+    text: Try This Free
+  image: https://placehold.co/500
+  image_alt: Graphs
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
