@@ -36,7 +36,7 @@ Sendit is set up for adding, updating and removing pages, components, posts, nav
 ### Nav/footer details
 
 * Reused around the site to save multiple editing locations.
-* Set in the *Data* section with respective names
+* Set in the *Navigation* section with respective names
 
 ### SEO details and favicon
 
