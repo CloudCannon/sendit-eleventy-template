@@ -1,6 +1,7 @@
 ---
 date: 
 title: 
+post_permalink: /blog/{{title | slugify }}
 seo:
   page_description: 
   canonical_url: 
@@ -17,5 +18,6 @@ thumbImg:
   image_alt: 
 featuredImg:
   image: 
-  image_alt: 
+  image_alt:
+draft: true 
 ---

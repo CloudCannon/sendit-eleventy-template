@@ -6,10 +6,6 @@
     "description": "A polished, marketing website template built with Eleventy",
     "twitter_image": "/images/feature/feature-hero-two.png",
     "twitter_site": "@twitter_site",
-    "image": "/images/feature/feature-hero.png",
-    "_inputs": {
-        "twitter_site": {
-            "type": "twitter"
-        }
-    }
+    "image": "/images/feature/feature-hero.png"
+    
 }

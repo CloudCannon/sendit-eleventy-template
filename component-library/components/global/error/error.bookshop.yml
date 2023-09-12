@@ -15,6 +15,9 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  description: "Something is wrong here!"
+  image: https://placehold.co/500
+  image_alt: Error
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

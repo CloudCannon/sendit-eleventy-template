@@ -15,6 +15,9 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  image: https://placehold.co/500
+  image_alt: Thumbnail for video
+  video_url: "https://vimeo.com/45830194"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

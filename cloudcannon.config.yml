@@ -1,20 +1,116 @@
+source: site
+collections_config_override: true
+data_config:
+  blog-tags: true
 collections_config:
   pages:
+    icon: feed
+    disable_add_folder: true
+    output: true
+    path: pages
     schemas:
       page:
         path: site/schemas/page.html
     _enabled_editors:
       - visual
   blog:
-    path: 'blog'
+    path: blog
+    icon: article
+    disable_add_folder: true
+    output: true
     schemas:
       default:
         path: site/schemas/post.md
+    preview:
+      metadata: 
+        - icon: newspaper
+          text: 
+            - key: tags
     _enabled_editors:
       - content
       - visual
+  data: 
+    output: true
+    path: _data
+    icon: settings
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
+    filter:
+      exclude: 
+        - nav.json
+        - footer.json
+        - theme.json
+  site_navigation:
+    output: true
+    path: _data
+    icon: table_rows
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
+    filter:
+      base: none
+      include: 
+        - nav.json
+        - footer.json
+  theme_palette:
+    output: true
+    path: _data
+    disable_add: true
+    disable_add_folder: true
+    icon: color_lens
+    _enabled_editors:
+      - data
+    filter:
+      base: none
+      include: 
+        - theme.json
+
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+  - heading: Blogging
+    collections:
+      - blog
+  - heading: Site Settings
+    collections:
+      - data
+      - theme_palette
+      - site_navigation
+
+
+_structures:
+  content_blocks:
+    style: modal
+  dropdown: 
+    values:
+      value:
+        dropdown_text:
+        dropdown_link:
+  social:
+    values:
+      value:
+        link: 
+        icon: 
+        icon_alt:
+  sections:
+    values:
+      value:
+        title:
+        links:  
+  links:
+    values:
+      value:
+        text: 
+        link:
+
 
 _inputs:
+  post_permalink:
+    hidden: true
   date:
     instance_value: now
   title_suffix:
@@ -27,10 +123,17 @@ _inputs:
     type: number
   social:
     options:
+      structures: _structures.social 
       preview:
         icon: link
   links:
     options:
+      structures: _structures.links
+      preview:
+        icon: link
+  sections:
+    options:
+      structures: _structures.sections
       preview:
         icon: link
   items:
@@ -53,28 +156,68 @@ _inputs:
   isActive:
     type: switch
   page_description:
-    comment: Defaults to the description set in the Site SEO data file
+    comment: If empty, defaults to the description set in the Site SEO data file 
   favicon_icon:
     type: image
     comment: For the shortcut icon meta tag
-  faivcon_image:
+  favicon_image:
     type: image
     comment: For the icon meta tag
   canonical_url:
-    comment: Defaults to the pages url
+    comment: If empty, defaults to the page URL
   featured_image:
     comment: Defaults to the image set in the Site SEO data file
   open_graph_type:
-    comment: Defaults to the type 'website'
+    type: select
+    options:
+      values: 
+        - website
+        - article
+        - profile
   author_twitter_handle:
+    type: twitter
     comment: Defaults to the twitter site value set in the Site SEO data file
   no_index:
     type: checkbox
     comment: When selected this removes the page from your sitemap and adds the noindex robots meta tag
+  enable_dropdown:
+    type: switch
+  dropdown:
+    type: array
+    options: 
+      structures: _structures.dropdown
+    label: Dropdown Items
+    hidden: "!enable_dropdown"
+  dropdown_link:
+    type: url
+    label: Link
+  dropdown_text:
+    type: text
+    label: Name
+  logo:
+    type: image
+  permalink:
+    type: text
+    comment: Prefix the url with a forward slash e.g. /blog/
+  tags:
+    type: multiselect
+    options: 
+      values: data.blog-tags
   layout:
     hidden: true
   eleventyExcludeFromCollections:
     hidden: true
+  twitter_site:
+    type: twitter
+    label: Twitter Username
+  enable_nav_btn:
+    type: switch
+  nav_btn:
+    hidden: "!enable_nav_btn"
   
 paths:
   uploads: images
+  data: _data
+  collections: content
+  includes: layouts
+  layouts: layouts

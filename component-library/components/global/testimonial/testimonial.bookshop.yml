@@ -20,6 +20,15 @@ blueprint:
       message: "Eget eu massa et consectetur. Mauris donec. Leo a, id sed duis proin sodales. Turpis viverra diam porttitor mattis morbi ac amet."
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  title: "We Felt Proud When People Love our"
+  title_suffix: "Product"
+  description: We believe that a good email marketing strategy is the key to growth. So we’re helping you grow your business with tools and resources that make email marketing easy.
+  slider:
+    - image: https://placehold.co/80x80
+      image_alt: Profile photo of the Head of Development
+      author: "Sherlock Homes"
+      designation: "Head of Dev. at Company"
+      message: "Eget eu massa et consectetur. Mauris donec. Leo a, id sed duis proin sodales. Turpis viverra diam porttitor mattis morbi ac amet."
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

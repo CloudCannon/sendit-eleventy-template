@@ -115,6 +115,15 @@
          format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+   font-family: 'FontAwesome';
+   src: url('../../../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../../../fonts/fontawesome-webfont.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+
 // Media quaries with min width
 @mixin media-breakpoint-up-sm {
    @media (min-width: 576px) {
@@ -205,7 +214,6 @@
 /********** 
  1. Default  Styles 
 **********/
-// @use 'sass:math';
 /*Font */
 body {
    font-family: $font-primary;
@@ -352,7 +360,6 @@ a {
 
    &-nav {
       display: block;
-      // margin-bottom: $base-padding * 12.5;
       background-color: none;
       .nav-pills {
          display: block;
@@ -14713,7 +14720,6 @@ a {
       padding: 1.5rem;
       border-radius: 0;
       width: 100%;
-      // width: calc(100% - 32px) !important;
       background: $color-white;
    }
 }
@@ -14751,7 +14757,6 @@ a {
       margin-top: $base-margin * 4.5 !important;
       justify-content: start;
       align-items: start;
-      // height: calc(100vh - 76px);
    }
    .nav-link {
       padding-right: $base-padding !important;
@@ -14773,20 +14778,35 @@ a {
          padding-left: 0.75rem !important;
       }
    }
+
+   
    .dropdown {
       .dropdown-menu {
-         box-sizing: content-box;
-         background: $color-white;
-         min-width: 188px;
-         transition: all 0.3s ease-in-out;
-         border: 0 solid $color-primary-dark;
-         border-radius: 1.25rem;
-         padding: 10px 30px 20px;
-         right: 1.5rem;
-         left: unset;
-         box-shadow: 0px 40px 60px rgba(189, 189, 189, 0.25);
+         position: absolute;
+         top: calc(100% + 8px);
+         left: -32px;
+         transform: translateZ(0) scale(.9);
+         backface-visibility: hidden;
+         z-index: 100;
+         min-width: 150px;
+         display: block;
+         padding: 20px;
+         opacity: 0;
+         visibility: hidden;
+         transition: all .25s ease;
+         border-radius: 8px;
+         box-shadow: 0 20px 20px #1495a712;
+         background-color: #fff;
+
+         li {
+            margin-bottom: 10px;
+
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
       }
-      &-toggle {
+      &-link {
          &:after {
             content: '\f107';
             font-family: FontAwesome;
@@ -14797,10 +14817,12 @@ a {
             border-top: none;
             padding: $base-padding * 0;
             margin-right: 0 !important;
+            margin-left: 5px;
          }
       }
+
       li.dropdown-megamenu-column-items {
-         padding: 1.25rem 0rem;
+         padding: 10rem 0rem;
          display: flex;
          &:last-child {
             padding-bottom: 0.5rem;
@@ -14810,17 +14832,20 @@ a {
          }
       }
       &-item {
-         margin-bottom: 0;
+         margin-bottom: 0;  
          color: $color-text-light;
          font-weight: 600;
          text-align: left;
          font-size: $base-font-size * 1.1;
          padding: 0;
          background: none;
+       
          &:hover {
-            color: $color-primary;
+           color: $color-primary;
          }
-      }
+       }
+       
+       
       .nav-arrow {
          position: absolute;
          top: -10px;
@@ -14887,7 +14912,8 @@ a {
             transform-origin: 0 0 0;
             right: 0;
             transition: all 0.1s ease-in-out;
-            padding: 40px 0px 5px 60px;
+            border: none;
+            padding: 0 20px;
             box-shadow: 0px 0 0 rgba(189, 189, 189, 0.25);
             margin-bottom: 20px;
             .dropdown-megamenu-column-items {
@@ -14901,16 +14927,14 @@ a {
          .dropdown-menu.show {
             display: block;
             opacity: 1;
+            position: unset;
             visibility: visible;
             transform: scaleY(1);
             transform-origin: 0 0 0;
             height: auto;
             text-align: center;
-            background: $color-secondary-dark;
             width: calc(100% + 2rem);
-            margin-left: -3rem;
             border-radius: 0;
-            margin-top: -60px;
          }
          &-toggle {
             &:after {
@@ -15263,7 +15287,6 @@ a {
    }
    // start block two section
    &-two {
-      // padding-bottom: $base-padding * 12.5;
       margin-top: 0;
       .section-header {
          padding-bottom: $base-padding * 3.5;

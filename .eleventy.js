@@ -8,6 +8,7 @@ const MarkdownIt = require("markdown-it"),
   });
 
 module.exports = function (eleventyConfig) {
+
   eleventyConfig.addFilter("length", (input) => {
     return input.length;
   });

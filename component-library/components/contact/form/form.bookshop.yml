@@ -41,6 +41,35 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  address:
+    heading: Office Address
+    address: "1421 San Pedro St, Los Angeles, CA 90015"
+  phone:
+    heading: "Phone"
+    cell: "(546) 232 - 9872"
+    image: https://placehold.co/28x28
+    image_alt: call-add
+  email:
+    heading: "Email"
+    email: "hello@example.com"
+    image: https://placehold.co/28x28
+    image_alt: send-box
+  form:
+    heading: "Say Hello"
+    fullname:
+      heading: "Full Name"
+      placeholder: "Enter First Name"
+    phone_number:
+      heading: "Phone number"
+      placeholder: "Enter Phone Number"
+    email:
+      heading: "Email Address"
+      placeholder: "Enter Email Address"
+    message:
+      heading: "Your Messages"
+      placeholder: "Any Message"
+    submit_button:
+      text: "Send message"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: 

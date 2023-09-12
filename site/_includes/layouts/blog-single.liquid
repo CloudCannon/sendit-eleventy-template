@@ -1,78 +1,82 @@
 {% include './layouts/head.liquid' %}
 <main>
-   <section class="blog-details">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <article class="blog-single">
-                  <div class="inner-blog-details">
-                     <h2 class="w-xxl-70 w-xl-80 w-100">{{ title }}</h2>
-                     <div class="inner-blog-details-meta">
-                        <ul class="list-unstyled">
-                           <li class="list-inline-item">
-                              <p>{{ date | postDate }}</p>
-                           </li>
-                           <li class="list-inline-item">
-                              <p><span> Written by:</span> {{ author }}</p>
-                           </li>
-                           <li class="list-inline-item">
-                              <p>{{ content | emojiReadTime }}</p>
-                           </li>
-                           {% if content != "" and content.length > 0 %}
-                              {% assign contentWordCount = content | wordCount %}
-                              {% if contentWordCount > 0 %}
-                                <li class="list-inline-item">
-                                  <p>{{ contentWordCount }}<span> words</span></p>
-                                </li>
-                              {% endif %}
-                           {% endif %}
-                        </ul>
-                     </div>
-                  </div>
-                  <img
-                     src="{{ featuredImg.image }}"
-                     class="w-100 mb-xxl-11 mb-8"
-                     alt="{{ featuredImg.image_alt }}"
-                  />
-                  <div style="max-width: 900px; margin: 0 auto">{{ content }}</div>
-               </article>
+  <section class="blog-details">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <article class="blog-single">
+            <div class="inner-blog-details">
+              <h2 class="w-xxl-70 w-xl-80 w-100">{{ title }}</h2>
+              <div class="inner-blog-details-meta">
+                <ul class="list-unstyled">
+                  <li class="list-inline-item">
+                    <p>{{ date | postDate }}</p>
+                  </li>
+                  <li class="list-inline-item">
+                    <p>
+                      <span>
+                        Written by:</span>
+                      {{ author }}</p>
+                  </li>
+                  <li class="list-inline-item">
+                    <p>{{ content | emojiReadTime | replace: ".", "" }}</p>
+                  </li>
+                  {% if content != "" and content.length > 0 %}
+                    {% assign contentWordCount = content | wordCount %}
+                    {% if contentWordCount > 0 %}
+                      <li class="list-inline-item">
+                        <p>{{ contentWordCount }}<span>
+                            words</span>
+                        </p>
+                      </li>
+                    {% endif %}
+                  {% endif %}
+                </ul>
+              </div>
             </div>
-         </div>
+            <img
+              src="{{ featuredImg.image }}"
+              class="w-100 mb-xxl-11 mb-8"
+              alt="{{ featuredImg.image_alt }}" />
+            <div style="max-width: 900px; margin: 0 auto">{{ content }}</div>
+          </article>
+        </div>
       </div>
-   </section>
-   <section class="blog-related position-relative">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="blog-section">
-                  <h2 class="blog-section-title">Recent Blog</h2>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            {% for blog in collections.blog reversed limit: 3%}
-            <div class="col-lg-4 col-md-6">
-               <article class="blog-post">
-                  <div class="blog-post-thumb">
-                     <a href="{{ blog.url }}">
-                        <img src="{{ blog.data.thumbImg.image }}" alt="{{ blog.data.thumbImg.image_alt }}" />
-                     </a>
-                  </div>
-                  <div class="blog-post-content">
-                     <div class="blog-post-tag">
-                        {% for tag in blog.data.tags limit: 2 %}
-                        <a href="/tag/{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                     </div>
-                     <div class="blog-post-title">
-                        <a href="{{ blog.url }}">{{ blog.data.title }}</a>
-                     </div>
-                  </div>
-               </article>
-            </div>
-            {% endfor %}
-         </div>
+    </div>
+  </section>
+  <section class="blog-related position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="blog-section">
+            <h2 class="blog-section-title">Recent Blog</h2>
+          </div>
+        </div>
       </div>
-   </section>
+      <div class="row">
+        {% for blog in collections.blog reversed limit: 3 %}
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-post">
+              <div class="blog-post-thumb">
+                <a href="{{ blog.url }}">
+                  <img src="{{ blog.data.thumbImg.image }}" alt="{{ blog.data.thumbImg.image_alt }}" />
+                </a>
+              </div>
+              <div class="blog-post-content">
+                <div class="blog-post-tag">
+                  {% for tag in blog.data.tags limit: 2 %}
+                    <a href="/tag/{{ tag }}">{{ tag }}</a>
+                  {% endfor %}
+                </div>
+                <div class="blog-post-title">
+                  <a href="{{ blog.url }}">{{ blog.data.title }}</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 </main>
 {% include './layouts/tail.liquid' %}

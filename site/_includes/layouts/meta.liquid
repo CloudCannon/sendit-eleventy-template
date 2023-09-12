@@ -1,0 +1,64 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{%- comment -%} Page description for SEO {%- endcomment -%}
+{% if seo.page_description %}
+    <meta name="description" content="{{ seo.page_description }}">
+    <meta property="og:description" content="{{ seo.page_description }}" />
+{% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+
+{% comment %} meta tags for open graph and twitter {% endcomment %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ site.twitter_site }}" />
+{% if page.url == "/" %}
+    <meta name="og:title" content="{{site.site_title }}" />
+    <meta property="og:type" content="website" />
+    <meta name="og:image" content="{{ site.image }}" />
+    <meta name="twitter:creator" content="{{ site.twitter_site }}" />
+    <meta name="twitter:title" content="{{ site.site_title }}" />
+    {% if site.twitter_image %}
+    <meta name="twitter:image" content="{{ site.twitter_image }}" />
+    {% else %}
+    <meta name="twitter:image" content="{{ site.image }}" />
+    {% endif %}
+{% else %}
+    <meta name="og:title" content="{{ title }}" />
+    <meta name="twitter:title" content="{{ title }}" />
+    {% if seo.open_graph_type %}
+    <meta property="og:type" content="{{ seo.open_graph_type }}" />
+    {% else %}
+    <meta property="og:type" content="website" />
+    {% endif %}
+    {% if seo.featured_image %}
+    <meta name="og:image" content="{{ seo.featured_image }}" />
+    <meta name="twitter:image" content="{{ seo.featured_image }}" />
+    {% else %}
+    <meta name="og:image" content="{{ site.image }}" />
+    {% if site.twitter_image %}
+        <meta name="twitter:image" content="{{ site.twitter_image }}" />
+    {% else %}
+        <meta name="twitter:image" content="{{site.image }}" />
+    {% endif %}
+    {% endif %}
+    {% if seo.author_twitter_handle %}  
+    <meta name="twitter:creator" content="{{ seo.author_twitter_handle }}" />
+    {% else %}
+    <meta name="twitter:creator" content="{{ site.twitter_site }}" />
+    {% endif %}
+{% endif %}
+
+{% comment %} Add robots no index {% endcomment %}
+{% if seo.no_index %}
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+{% endif %}
+
+{%- comment -%} Canonical URL for SEO {%- endcomment -%}
+{% if seo.canonical_url %}
+    <link rel="canonical" href="{{ site.BaseURL }}{{ seo.canonical_url | url }}" />
+{% else %}
+    <link rel="canonical" href="{{ site.BaseURL }}{{ page.url | url }}" />
+{% endif %}

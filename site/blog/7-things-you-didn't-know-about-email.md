@@ -1,6 +1,7 @@
 ---
 date: 2022-04-14
 title: 7 things you didn't know about email
+post_permalink: /blog/{{ title | slugify }}/
 layout: layouts/blog-single.liquid
 tags:
   - marketing
@@ -19,6 +20,7 @@ seo:
   author_twitter_handle: 
   open_graph_type: article
   no_index: false
+draft: false
 ---
 
 When you send an email campaign, you expect it to reach your readers, right? But what if the emails go straight to your subscribers' spam folders instead of their inboxes? To make sure your emails reach their recipients successfully, follow these email delivery tips.
