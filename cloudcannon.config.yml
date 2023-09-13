@@ -9,7 +9,7 @@ collections_config:
     output: true
     path: pages
     schemas:
-      page:
+      default:
         path: site/schemas/page.html
     _enabled_editors:
       - visual
